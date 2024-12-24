@@ -1,6 +1,3 @@
-2024/07/20-18:26:20.116 2178 Reusing MANIFEST C:\Users\ajayk\OneDrive\Desktop\WebScrapping\tmp\Default\Local Storage\leveldb/MANIFEST-000001
-2024/07/20-18:26:20.125 2178 Recovering log #80
-2024/07/20-18:26:20.130 2178 Reusing old log C:\Users\ajayk\OneDrive\Desktop\WebScrapping\tmp\Default\Local Storage\leveldb/000080.log 
-2024/07/20-18:26:33.257 1bb8 Level-0 table #84: started
-2024/07/20-18:26:33.270 1bb8 Level-0 table #84: 16969 bytes OK
-2024/07/20-18:26:33.278 1bb8 Delete type=0 #80
+2024/10/25-22:07:40.269 4e8 Reusing MANIFEST C:\Users\lenovo\Desktop\web scrapper\The-NewsScrapper\WebScrapping\tmp\Default\Local Storage\leveldb/MANIFEST-000001
+2024/10/25-22:07:40.284 4e8 Recovering log #3
+2024/10/25-22:07:40.297 4e8 Reusing old log C:\Users\lenovo\Desktop\web scrapper\The-NewsScrapper\WebScrapping\tmp\Default\Local Storage\leveldb/000003.log 
