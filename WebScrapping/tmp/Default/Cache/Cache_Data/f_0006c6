@@ -1,0 +1,2295 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            outline: none;
+            text-decoration: none;
+            word-wrap: break-word;
+        }
+        a {
+            text-decoration: none;
+        }
+        /* interlinking scorecard.css */
+        .transition {
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+        .spriteImg {
+            background-image: url("https://www.hindustantimes.com/static-content/1y/ht/ht-sprite-6-t.png");
+            background-size: 81px 3011px;
+        }
+        .stickyCard {
+            background-color: #fff;
+            padding: 10px 10px 1px;
+            margin-left: -10px;
+            margin-right: -10px;
+            position: sticky;
+            top: 50px;
+            left: 0px;
+            z-index: 2;
+        }
+        @media (min-width: 768px) {
+            .stickyCard {
+                padding: 0;
+                top: 178px;
+            }
+        }
+        .crickitCard {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            background: #3d44c6 url("https://www.hindustantimes.com/static-content/1y/ht/cricket/liveBlog-mWeb.png") no-repeat;
+            background-size: cover;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+            max-width: 780px;
+            min-height: 101px;
+            margin: 0 auto 9px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -o-border-radius: 12px;
+            border-radius: 12px;
+            padding: 6px 8px;
+            box-sizing: border-box;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            font-family: "Lato", sans-serif;
+            height: 100%;
+        }
+        .crickitCard.upcome {
+          justify-content: center;
+        }
+        @media (min-width: 768px) {
+            .crickitCard {
+                background: #3d44c6 url("https://www.hindustantimes.com/static-content/1y/ht/cricket/liveBlog-Web.png") no-repeat;
+                padding: 6px 40px;
+                background-size: 100% 100%;
+            }
+        }
+        .crickitCard .cardStatus {
+            width: 100%;
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 14px;
+            text-transform: uppercase;
+            margin-bottom: -9px;
+            position: absolute;
+            top: 6px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .crickitCard .crickitUpcoming {
+            background-color: #9e00ff;
+            border: solid 1px #fff;
+            border-color: #9e00ff;
+            border-color: rgba(255, 255, 255, 0.5);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            padding: 2px 8px 0px;
+            box-sizing: border-box;
+        }
+        .crickitCard .crickitToss {
+            background-color: #d400a6;
+            border: solid 1px #fff;
+            border-color: #d400a6;
+            border-color: rgba(255, 255, 255, 0.5);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            padding: 2px 8px 0px;
+            box-sizing: border-box;
+        }
+        .crickitCard .crickitLive {
+            background-color: red;
+            border: solid 1px red;
+            border-color: rgba(255, 255, 255, 0.5);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            padding: 2px 8px 0px;
+            box-sizing: border-box;
+        }
+        .crickitCard .crickitResults {
+            background-color: #06b823;
+            border: solid 1px #fff;
+            border-color: #06b823;
+            border-color: rgba(255, 255, 255, 0.5);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            padding: 2px 8px 0px;
+            box-sizing: border-box;
+        }
+        .crickitCard .crickitInningBreaks {
+            background-color: #e25f00;
+            border: solid 1px #fff;
+            border-color: #e25f00;
+            border-color: rgba(255, 255, 255, 0.5);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            padding: 2px 8px 0px;
+            box-sizing: border-box;
+        }
+        .crickitCard .crickitAbandoned {
+            background-color: #575652;
+            border: solid 1px #fff;
+            border-color: #575652;
+            border-color: rgba(255, 255, 255, 0.5);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            padding: 2px 8px 0px;
+            box-sizing: border-box;
+        }
+        .crickitCard .crickitOnHold {
+            background-color: #e25f00;
+            border: solid 1px #fff;
+            border-color: #e25f00;
+            border-color: rgba(255, 255, 255, 0.5);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            padding: 2px 8px 0px;
+            box-sizing: border-box;
+        }
+        .crickitCard .cardDetailArea {
+            width: 100%;
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .crickitCard .crickitVs {
+            color: #b6b9ff;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .crickitCard .teamlogo img {
+            width: 100%;
+        }
+        .crickitCard .teamlogo.muted img {
+            -webkit-filter: grayscale(100%) opacity(50%);
+            -moz-filter: grayscale(100%) opacity(50%);
+            -o-filter: grayscale(100%) opacity(50%);
+            filter: grayscale(100%) opacity(50%);
+        }
+        .crickitCard .teamSec {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex: 1;
+        }
+        .crickitCard .teamSec strong {
+            font-size: 12px;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 0px 4px;
+            flex: 1;
+            line-height: 18px;
+        }
+        @media (min-width: 768px) {
+            .crickitCard .teamSec strong {
+                font-size: 20px;
+                padding: 0px 8px;
+            }
+        }
+        .crickitCard .teamSec .teamlogo {
+            width: 28px;
+            height: 28px;
+            border: solid 2px #fff;
+            -webkit-border-radius: 16px;
+            -moz-border-radius: 16px;
+            -o-border-radius: 16px;
+            border-radius: 16px;
+        }
+        .crickitCard .teamSec:last-child {
+            justify-content: flex-end;
+        }
+        .crickitCard .teamSec:last-child .teamlogo {
+            order: 1;
+        }
+        .crickitCard .teamSec:last-child .teamGroup {
+            order: 1;
+        }
+        .crickitCard .teamSec:last-child .teamInfo,
+        .crickitCard .teamSec:last-child .teamMuted {
+            padding-left: 0;
+            padding-right: 4px;
+            align-items: flex-end;
+            text-align: right;
+        }
+        .crickitCard .teamSec:last-child .teamMuted .teamInfo {
+          padding-right: 0;
+        }
+        .crickitCard .teamSec:last-child .teamName {
+            order: 1;
+            left: auto;
+            right: 0;
+        }
+        .crickitCard .teamSec:last-child .teamInfo {
+          padding-right: 8px;
+        }
+        .crickitCard .teamSec:last-child strong {
+            text-align: right;
+        }
+        .crickitCard .teamName {
+            margin-top: 4px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #fff;
+            opacity: 0.8;
+            text-transform: uppercase;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            min-width: 32px;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .crickitCard .teamGroup {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            padding-bottom: 26px;
+        }
+        .crickitCard .teamGroup.pb0 { padding-bottom: 0;}
+        .crickitCard .teamInfo {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 4px;
+        }
+        .crickitCard .teamInfo strong {
+            padding: 0;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .crickitCard .teamInfo strong:not(:first-child) {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        @media (min-width: 768px) {
+            .crickitCard .teamInfo strong:not(:first-child) {
+                font-size: 20px;
+            }
+            .crickitCard .teamInfo {
+              padding-left: 8px;
+            }
+            .crickitCard .teamSec:last-child .teamMuted {
+              padding-right: 8px;
+            }
+        }
+        @media (min-width: 768px) {
+            .crickitCard .teamInfo strong {
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+        .crickitCard .teamScore {
+            opacity: 0.8;
+        }
+        .crickitCard .teamMuted {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 8px;
+            opacity: 0.8;
+        }
+        .crickitCard .teamMuted .teamScore {
+            padding: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+        @media (min-width: 768px) {
+            .crickitCard .teamMuted .teamScore {
+                font-size: 20px;
+                line-height: 20px;
+            }
+            .crickitCard .teamMuted strong {
+              padding: 0;
+            }
+        }
+        .crickitCard .teamMuted span {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        @media (min-width: 768px) {
+            .crickitCard .teamMuted span {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+        .crickitCard .teamMuted .teamOvr {
+            opacity: 0.8;
+        }
+        .crickitCard .teamOvr {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            /* margin-top: 3px; */
+        }
+        @media (min-width: 768px) {
+            .crickitCard .teamOvr {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+        .crickitCard .teamY2b {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            opacity: 0.8;
+        }
+        @media (min-width: 768px) {
+            .crickitCard .teamY2b {
+                font-size: 18px;
+            }
+        }
+        .crickitCard .cardMsg {
+            width: 100%;
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            color: #ffe500;
+            font-size: 12px;
+            font-weight: 700;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: block;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 4px;
+            margin: auto;
+        }
+        @media (min-width: 768px) {
+            .crickitCard .cardMsg {
+                font-size: 14px;
+            }
+        }
+        .crickitCard .crickTimer {
+            width: 100%;
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+            margin: auto;
+        }
+        .crickitCard .teamDesk {
+            display: block;
+        }
+        .crickitCard .teamMob {
+            display: none;
+        }
+        .timerBg {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            background-color: #242ba7;
+            padding: 1px 10px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -o-border-radius: 4px;
+            border-radius: 4px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            /* margin-bottom: -6px; */
+        }
+        .timerBg strong {
+            font-size: 12px;
+            font-weight: 700;
+            min-width: 18px;
+            display: inline-block;
+            text-align: right;
+        }
+        @media (min-width: 768px) {
+            .timerBg {
+              -webkit-border-radius: 6px;
+              -moz-border-radius: 6px;
+              -o-border-radius: 6px;
+              border-radius: 6px;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+            }
+            .timerBg strong {
+                font-size: 16px;
+            }
+        }
+        .timerBg span {
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .timerBg li {
+            padding: 0 2px;
+        }
+        .timerBg li:not(:last-child)::after {
+            padding: 0 2px 0 4px;
+            content: ":";
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .removeAnimation .cardStatus,
+        .removeAnimation .centerAds,
+        .removeAnimation .cardDetailArea {
+            animation: elAnimateDefault 0.5s forwards 0s ease-in;
+            transition: transform 0.2s;
+        }
+        .removeAnimation .cardMsg {
+            animation: cardMsgAnimateDefault 0.6s forwards 0s ease-in;
+        }
+        .imgAndAds {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .adsFlex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+        .emojiAnimation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            text-align: center;
+            transform: scale(0);
+        }
+        .emojiAnimation img {
+            max-width: 225px;
+            display: inline;
+            max-height: 33px;
+        }
+        .scoreAnimation .emojiAnimation span {
+            color: #ffe500;
+            font-size: 12px;
+            font-weight: 700;
+            padding-bottom: 6px;
+        }
+        .scoreAnimation {
+            transition: transform 0.2s;
+        }
+        .scoreAnimation .emojiAnimation {
+            animation: emojiZoom 0.5s forwards 0s ease-in;
+            animation-delay: 0.5s;
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .scoreAnimation .cardDetailArea {
+            animation: elAnimateUP 0.6s forwards 0s ease-in;
+            transform: scale(0);
+        }
+        .scoreAnimation .cardStatus, .scoreAnimation .centerAds {
+            animation: elAnimateUP 0.4s forwards 0s ease-in;
+            transform: scale(0);
+        }
+        .scoreAnimation .centerAds {
+          z-index: -1;
+        }
+        .scoreAnimation .cardMsg {
+            animation: elAnimateDown 0.6s forwards 0s ease-in;
+        }
+        .sponsorsDiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+            border-color: rgba(255, 255, 225, 0.5);
+            flex-direction: column;
+            border-radius: 6px;
+            overflow: hidden;
+            font-size: 7px;
+            font-weight: 700;
+            width: 87px;
+            height: 33px;        
+        }
+        .centerAds {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            max-width: 90px;
+            max-height: 36px;
+            background-color: #3d44c6;
+            z-index: 1;
+            font-size: 7px;
+            font-weight: 600;
+        }
+        .adsTitle {
+            background-image: linear-gradient(90deg, transparent 1%, #e6e7ff 103%);
+            width: 100%;
+            text-align: center;
+            height: 10px;
+            line-height: 10px;
+            color: #fff;
+        }
+        .adCode87x33 {
+            margin: auto;
+        }
+        .adCode87x33 img {
+            width: 87px;
+            height: 33px;
+        }
+        @-webkit-keyframes emojiZoom {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @-moz-keyframes emojiZoom {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @-ms-keyframes emojiZoom {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @-o-keyframes emojiZoom {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes emojiZoom {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @-webkit-keyframes elAnimateUP {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, -150%);
+            }
+        }
+        @-moz-keyframes elAnimateUP {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, -150%);
+            }
+        }
+        @-ms-keyframes elAnimateUP {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, -150%);
+            }
+        }
+        @-o-keyframes elAnimateUP {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, -150%);
+            }
+        }
+        @keyframes elAnimateUP {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, -150%);
+            }
+        }
+        @-webkit-keyframes elAnimateDown {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, 150%);
+            }
+        }
+        @-moz-keyframes elAnimateDown {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, 150%);
+            }
+        }
+        @-ms-keyframes elAnimateDown {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, 150%);
+            }
+        }
+        @-o-keyframes elAnimateDown {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, 150%);
+            }
+        }
+        @keyframes elAnimateDown {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, 150%);
+            }
+        }
+        @-webkit-keyframes cardMsgAnimateDefault {
+            0% {
+                transform: translate(0, 150%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @-moz-keyframes cardMsgAnimateDefault {
+            0% {
+                transform: translate(0, 150%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @-ms-keyframes cardMsgAnimateDefault {
+            0% {
+                transform: translate(0, 150%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @-o-keyframes cardMsgAnimateDefault {
+            0% {
+                transform: translate(0, 150%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @keyframes cardMsgAnimateDefault {
+            0% {
+                transform: translate(0, 150%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @-webkit-keyframes elAnimateDefault {
+            0% {
+                transform: translate(0, -150%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @-moz-keyframes elAnimateDefault {
+            0% {
+                transform: translate(0, -150%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @-ms-keyframes elAnimateDefault {
+            0% {
+                transform: translate(0, -150%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @-o-keyframes elAnimateDefault {
+            0% {
+                transform: translate(0, -150%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @keyframes elAnimateDefault {
+            0% {
+                transform: translate(0, -150%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        /* stickyScorecard.css */
+        .transition{-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;-o-transition:all 0.2s ease;transition:all 0.2s ease}.spriteImg{background-image:url("https://www.hindustantimes.com/static-content/1y/ht/ht-sprite-6-t.png");background-size:81px 3011px}.scoreCardSlider{padding-top:12px;background-image:linear-gradient(0deg, transparent 1%, #E6E7FF 103%);}.deskSlider{position:relative;overflow:hidden}.deskSlider button{cursor: pointer;position:absolute;top:0;right:0;bottom:0;left:auto;margin:auto;width:44px;height:44px;background-color:#fff;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;border-radius:50%;z-index:2;border:0;box-shadow:0 0 16px rgba(0,0,0,0.3);display:none}.deskSlider button:first-child{left:0;right:auto}.deskSlider .leftArrow{position:relative;display:inline-block;margin:3px 0 0;width:25px;height:25px}.deskSlider .leftArrow::before{content:"";display:block;position:absolute;top:0;right:0;bottom:0;left:-1px;margin:auto;content:"";display:block;height:12px;width:12px;border-style:solid;border-color:#777;border-width:0px 3px 3px 0px;-webkit-transform:rotate(135deg);-moz-transform:rotate(135deg);-o-transform:rotate(135deg);transform:rotate(135deg);border-color:#4147D5}.deskSlider .leftArrow::after{content:"";display:block;position:absolute;top:0;right:0;bottom:0;left:3px;margin:auto;width:100%;max-width:22px;height:3px;background-color:#4147D5}.deskSlider .rightArrow{position:relative;display:inline-block;margin:4px 0 0;margin-right:4px;width:25px;height:25px}.deskSlider .rightArrow::before{content:"";display:block;position:absolute;top:0;right:0;bottom:0;left:6px;margin:auto;content:"";display:block;height:12px;width:12px;border-style:solid;border-color:#777;border-width:0px 3px 3px 0px;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);border-color:#4147D5}.deskSlider .rightArrow::after{content:"";display:block;position:absolute;top:0;right:1px;bottom:0;left:auto;margin:auto;width:100%;max-width:22px;height:3px;background-color:#4147D5}.cardSlideArea{display:flex;display:-webkit-flex;flex-wrap:wrap;align-items:center;align-items:stretch;flex-wrap:nowrap;padding:0 6px;scroll-behavior:smooth;transition:transform 0.5s ease-in-out}.cardSlideArea .crickitCard{height:100%;max-height:101px;box-shadow:0 0 6px rgba(0,0,0,0.3);margin-bottom:0}@media (min-width: 768px){.cardSlideArea .crickitCard{padding:6px 40px}}.cardSlideArea .slide{min-width:310px;width:100%;padding:0 6px}@media (min-width: 768px){.cardSlideArea .slide{min-width:740px}}.cardSlideArea.slides .slide{min-width:calc(100% - 40px)}@media (min-width: 768px){.cardSlideArea.slides .slide{min-width:740px}.cardSlideArea.slides .slide:last-child{padding-right:12px}}.pagingGroup{font-family:"Lato",sans-serif;display:flex;display:-webkit-flex;flex-wrap:wrap;align-items:center;justify-content:center; margin-bottom: 8px;}.pagingGroup strong{font-size:12px;font-weight:700;color:#11157F;margin-right:8px}@media (min-width: 768px){.pagingGroup strong{font-size:16px}}.cardPagings{display:flex;display:-webkit-flex;flex-wrap:wrap;align-items:center;flex-wrap:nowrap;justify-content:center;display:none}.cardPagings .dot{width:8px;height:8px;margin:0 2px;background-color:#A3A7FE;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;border-radius:4px;transition:all .5s ease-out}.cardPagings .dot.active{width:24px;background-color:#4147D5}
+        /* echo.css */
+        /* change max-width:767px in echo.css */
+        .transition{-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;-o-transition:all 0.2s ease;transition:all 0.2s ease}.spriteImg{background-image:url("https://www.hindustantimes.com/static-content/1y/ht/ht-sprite-6-t.png");background-size:81px 3011px}.echoWrapper{color:#fff;font-size:14px;font-weight:700;line-height:20px;font-family:"Lato",sans-serif;display:flex;display:-webkit-flex;flex-wrap:wrap;align-items:center;align-items:flex-end;justify-content:space-between;text-decoration:none;background:linear-gradient(89deg, #000332 .19%, #020754 124.71%);padding:13px 10px 0px;-webkit-border-radius:12px;-moz-border-radius:12px;-o-border-radius:12px;border-radius:12px;min-height:101px;max-height:100%;box-sizing:border-box;margin:0 auto}.echoWrapper .detailSec{flex:1;padding-right:16px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;padding-bottom:5px}.echoWrapper .detailSec p{color:#FFF;font-size:14px;font-weight:400;line-height:18px;max-width:350px;padding:0;margin-bottom:8px}@media (min-width: 1024px){.echoWrapper .detailSec p{max-width:100%}}.echoWrapper .explore{display:flex;align-items:center;margin-bottom:8px}.echoWrapper .explore img.cricketImg{width:54px;height:16px;object-fit:contain}.echoWrapper .explore img.shineStar{width:24px;height:24px;object-fit:contain}.echoWrapper .explore span{color:#FCFF80;font-size:16px;font-weight:700;line-height:18px;margin:0 6px}.echoWrapper .imgWrapSec{width:80px;display:flex;align-items:flex-start;justify-content:center;position:relative;margin-right:2px;flex-direction:column}.echoWrapper .imgWrapSec img{width:100%;height:100%;display:block;object-fit:contain}@media (min-width: 1024px){.echoWrapper{min-height:81px;padding:16px 24px 0;font-size:16px}}
+   </style>
+   <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+</head>
+<body>
+    <div id="liveScorecard">
+      <div class="scoreCardSlider">
+        <div class="pagingGroup">
+            <strong id="matchNumber"></strong>
+            <div class="cardPagings"></div>
+        </div>
+        <div class="deskSlider">
+            <button id="slidePreviousButton" onclick="slidePrevious()">
+                <span class="leftArrow"></span>
+            </button>
+            <div class="cardSlideArea slides"></div>
+            <button id="slideNextButton" onclick="slideNext()">
+                <span class="rightArrow"></span>
+            </button>
+        </div>
+      </div>
+      <div id="sponsorAd1x1"></div>
+    </div>
+
+    <!-- <div id="echoDiv" style="display: none">
+      <a href="https://www.hindustantimes.com/cricket" class="echoWrapper">
+          <div class="detailSec">
+              <div class="explore">
+                  <img class="shineStar" src="https://www.hindustantimes.com/static-content/1y/ht/cricket/shineStar_wid.gif" alt="" title="" />
+                  <span>Explore</span>
+                  <img class="cricketImg" src="https://www.hindustantimes.com/static-content/1y/ht/cricket/crickIt_logo.png" alt="" title="" />
+              </div>
+              <p>Latest Cricket News, Stats, Matches, Photos, Highlights etc.</p>
+          </div>
+          <div class="imgWrapSec">
+              <img src="https://www.hindustantimes.com/static-content/1y/ht/cricket/liveScore_wid.gif" alt="" title="" />
+          </div>
+      </a>
+    </div> -->
+
+    <script>
+        let showReminder = false;
+        let isDelayed = false;
+        let isAbandoned = false;
+        let isToss = false;
+        let onlyForHt = true;
+        let domain = {
+          live: 'https://www.hindustantimes.com/cricket/live-scorecard-',
+          upcoming: 'https://www.hindustantimes.com/cricket/live-scorecard-',
+          result: 'https://www.hindustantimes.com/cricket/match-result-',
+        };
+        let t;
+        let timeLeft = {
+            hr: '',
+            min: '',
+            sec: '',
+          };
+
+        const months = [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ];
+        const refreshStatus = [
+            '10',
+            '17',
+            '18',
+            '19',
+            '110',
+            '111',
+            '112',
+            // '115',
+            '117',
+            '118',
+            '119',
+            '121',
+            '122',
+            '123',
+            '124',
+            // '127',
+        ];
+        const matchStatusDictRenewForLiveBlog = {
+            10: ["Live", "crickitLive"],
+            11: ["Hold", "crickitUpcoming"],
+            110: ["Inn", "crickitUpcoming"],
+            112: ["Break", "crickitUpcoming"],
+            113: ["Abandoned", "crickitAbandoned"],
+            115: ["YTB", "crickitUpcoming"],
+            114: ["Results", "crickitResults"],
+            117: ["Live", "crickitLive"],
+            120: ["Stumps ", "crickitOnHold"],
+            118: ["Stoppage", "crickitOnHold"],
+            12: ["Bad Light", "crickitOnHold"],
+            13: ["Hold", "crickitOnHold"],
+            14: ["Hold", "crickitOnHold"],
+            15: ["Hold", "crickitOnHold"],
+            16: ["Hold", "crickitOnHold"],
+            17: ["Dinner", "crickitOnHold"],
+            18: ["Drinks", "crickitOnHold"],
+            19: ["Fog", "crickitOnHold"],
+            111: ["Hold", "crickitOnHold"],
+            116: ["Halt", "crickitOnHold"],
+            119: ["Time Out", "crickitToss"],
+            125: ["Delayed", "crickitUpcoming"],
+            121: ["Super Over", "crickitToss"],
+            122: ["Tea", "crickitOnHold"],
+            123: ["Hold", "crickitOnHold"],
+            124: ["Hold", "crickitOnHold"],
+            126: ["Washed Out", "crickitOnHold"],
+            127: ["Toss", "crickitToss"],
+            130: ["Abandoned", "crickitAbandoned"],
+            131: ["Abandoned", "crickitAbandoned"],
+            128: ["Conceded", "crickitAbandoned"],
+            129: ["Awarded", "crickitUpcoming"],
+            150: ["Cancelled", "crickitAbandoned"],
+            160: ["Postponed", "crickitUpcoming"],
+        };
+
+        const statusToShowOnHomepage = [
+            '17',
+            '18',
+            '19',
+            '110',
+            '111',
+            '112',
+            '117',
+            '118',
+            '119',
+            '121',
+            '122',
+        ];
+
+    let matchStatus, teama_short, teamb_short;
+    const searchParams = new URLSearchParams(window.location.search);
+    const source = searchParams && searchParams?.get('source');
+    const isHomePage = searchParams && (searchParams?.get('isHomePage') == "true" ? true : false);
+
+
+    function isMobileDevice() {
+      const userAgent = navigator.userAgent.toLowerCase();
+      return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+    }
+
+    let isMobile = isMobileDevice();
+    let adSource = null;
+    let deviceCode = null;
+    let onClickSponsorUrl = null;
+    let htConfig = {};
+    let device = 'mobile';
+    let adIncrement = 0;
+    let upcomingIncr = 0
+
+    if (source === 'amp') {
+      adSource = '/1055314/HT_AMP_Logo_scorecard';
+      device = 'amp';
+      deviceCode = 'ampCode';
+    } else {
+        if (isMobile) {
+          adSource = '/1055314/HT_WAP_Logo_scorecard';
+          device = 'mobile';
+          deviceCode = 'mobileCode';
+        } else {
+          adSource = '/1055314/HT_DESK_Logo_scorecard';
+          device = 'desktop';
+          deviceCode = 'desktopCode';
+        }
+    }
+
+    function adSection(adSource, divId="sponsorAd1x1") {
+    if (!adSource || !divId) return; 
+
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+        googletag.defineSlot(adSource, [1,1], divId).addService(googletag.pubads());
+        // Enable services only once globally
+        if (!window.adServicesEnabled) {
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+            window.adServicesEnabled = true;
+        }
+        setTimeout(() => {
+            googletag.cmd.push(function() {
+                googletag.display(divId);
+            });
+        }, 500);  
+      });
+    }
+
+    function isTestMatch(id) {
+      const testMatchIds = ['1', '4', '11', '14', '21', '71', '81', '91', '101', '111', '130'];
+      
+      return testMatchIds.includes(id);
+    }
+
+    const redirectToSponsor = (event, teama_short='', teamb_short='') => {
+      event.preventDefault();
+      fireClickTracking(teama_short, teamb_short);
+      if (onClickSponsorUrl && window) {
+        window.open(onClickSponsorUrl, '_blank');
+      }
+    }
+
+    function LiveCard(matchData, lang = '', domain = { live: 'https://www.hindustantimes.com/cricket/live-scorecard-', result: 'https://www.hindustantimes.com/cricket/match-result-' }) {
+      let liveData = matchData;
+      let scoreCardRefresh = true;
+      let currentInning = liveData?.Innings?.length ? liveData?.Innings[liveData?.Innings?.length - 1] : {};
+      let commentaries = liveData?.commentary;
+      let matchDetail = liveData?.Matchdetail;
+      let matchObject = matchDetail?.Match;
+      let matchfile = matchObject?.Code;
+      let languageAppender = lang ? '-' + lang : '';
+
+      const teamList = Object.entries(matchData?.Teams)?.map(([teamId, teamInfo]) => ({
+        TeamId: teamId,
+        ...teamInfo,
+      }));
+
+      matchStatus = matchDetail?.Status_Id;
+
+      teama_short = teamList[0]?.Name_Short;
+      teamb_short = teamList[1]?.Name_Short;
+
+      let teama_full = teamList[0]?.Name_Full;
+      let teamb_full = teamList[1]?.Name_Full;
+
+      let teama_slug = teama_full?.toLowerCase().replaceAll(' ', '-');
+      let teamb_slug = teamb_full?.toLowerCase().replaceAll(' ', '-');
+
+      let matchnumber = matchObject?.Number;
+      let matchtype = matchObject?.Type;
+      let comptype = matchObject?.Comp_type_id;
+      let series_short_display_name = matchDetail?.Series?.Series_short_display_name;
+
+      let liveScoreAppender = matchStatus === '114' ? '' : 'live-score-';
+      let urlAppender = matchStatus === '114' ? domain?.result : domain?.live;
+
+      let url = `${teama_short.toLowerCase()}-vs-${teamb_short.toLowerCase()}${
+        series_short_display_name ? `-${series_short_display_name}` : ''
+      }-${matchnumber}-${teama_slug}-vs-${teamb_slug}-${matchtype}-${liveScoreAppender}${matchfile}`;
+
+      let formatedUrl = urlAppender + url?.replace(/,/g, '')?.replace(/\//g, '')?.replace(/_/g, '')?.replace(/:/g, '')?.replace(/\s+/g, '-')?.replace(/'/g, '')?.replace(/---/g, '-');
+
+      const matchAbandonedCase = liveData && ['130', '131'].includes(liveData?.Matchdetail?.Status_Id);
+
+      const groupedInnings = (Innings, Teams) => {
+        const inningsData = {};
+        Object.keys(Teams)?.forEach(key => {
+          inningsData[key] = {
+            Name_Short: Teams[key]?.Name_Short,
+            Name_Full: Teams[key]?.Name_Full,
+            Innings: Innings?.filter(inning => inning.Battingteam === key),
+          };
+        });
+        return inningsData;
+      };
+
+      let innings = liveData?.Innings;
+      let inning = groupedInnings(innings, liveData?.Teams);
+
+      let teamAId = teamList[0]?.TeamId;
+      let teamBId = teamList[1]?.TeamId;
+
+      if (innings && innings[0]?.Battingteam === teamBId) {
+        teama_short = teamList[1]?.Name_Short;
+        teamb_short = teamList[0]?.Name_Short;
+
+        teama_full = teamList[1]?.Name_Full;
+        teamb_full = teamList[0]?.Name_Full;
+
+        teamAId = teamList[1]?.TeamId;
+        teamBId = teamList[0]?.TeamId;
+      }
+
+      let winningteamId = matchDetail?.Winningteam;
+      let city = matchDetail?.Venue?.City;
+
+      let matchLabel = matchStatusDictRenewForLiveBlog[matchStatus] ? matchStatusDictRenewForLiveBlog[matchStatus][0] : 'LIVE';
+      let matchLabelClass = matchStatusDictRenewForLiveBlog[matchStatus] ? matchStatusDictRenewForLiveBlog[matchStatus][1] : 'upcoming';
+
+      let matchStatusMessage = matchDetail?.Result || matchDetail?.Equation || matchDetail?.Status;
+
+      if (!matchDetail?.Equation) {
+        let tossWonByTeam = matchDetail?.Tosswonby === teamAId ? teama_short : teamb_short;
+        let electedTo = matchDetail?.Toss_elected_to;
+        matchStatusMessage = matchDetail?.Tosswonby ? `Toss won by ${tossWonByTeam} and elected to ${electedTo}` : '';
+      }
+      let matchStatusText = matchStatusMessage.replace(teama_full, teama_short).replace(teamb_full, teamb_short);
+
+      const ParentElement = matchAbandonedCase ? 'div' : 'a';
+
+      const TeamInnings = (teamId, matchtype, currentInning = true, isWinning) => {
+        if (!inning[teamId]?.Innings?.length) {
+          return `<div class="teamInfo"><span class="teamY2b">YTB</span></div>`;
+        }
+        const ParentElement = (!currentInning && !isWinning) && !(isTestMatch(comptype) && inning[teamId]?.Innings.length === 1) ? `<div class="teamScore">` : '<strong>';
+        const closingParentElement = (!currentInning && !isWinning) && !(isTestMatch(comptype) && inning[teamId]?.Innings.length === 1)  ? '</div>' : '</strong>';
+        return [...inning[teamId]?.Innings]?.reverse()?.map((inn, index) => `
+                ${ParentElement}
+                  ${inn.Isdeclared ? `${inn.Total}/${inn.Wickets}d` : `${inn.Total}/${inn.Wickets}`}
+                ${closingParentElement}
+                ${!isTestMatch(comptype) && inn.AllottedOvers ?
+                `<div class="teamOvr">
+                  ${inn.Overs} ov
+                </div>` : ''}
+        `).join('');
+      };
+
+      function findMilestone(milestones) {
+        if (milestones?.length > 0) {
+          for (let i = 0; i < milestones.length; i++) {
+            if (milestones[i].Event_Type_Id === 1) {
+              const eventString = milestones[i].Event;
+              const milestoneValue = parseInt(eventString.split(' ')[0], 10);
+              return milestoneValue;
+            } else {
+                return null;
+            }
+            }
+        }
+        else
+            return null;
+        }
+
+      function findCommentaryDetails(commentaries) {
+        for (const commentary of commentaries) {
+          if (commentary?.Isball) {
+            const obj = {
+              ball: commentary?.Ball,
+              isWicket: commentary?.Iswicket ?? commentary?.Dismissed,
+              isBoundary: commentary?.Isboundary,
+              isFour: commentary?.Isboundary && commentary?.Batsman_Runs === '4',
+              isSix: commentary?.Isboundary && commentary?.Batsman_Runs === '6',
+              mileStone : findMilestone(commentary?.Milestone),
+            };
+            return obj;
+          }
+        }
+        return null;
+      }
+
+      let event = null;
+      let eventText = null;
+      let teamMileStone = false;
+      let playerMileStone = false;
+      function fireGifs() {
+        const commentaryArray = commentaries;
+        for (let commentary of commentaryArray) {
+          if (commentary.Isball) {
+            if (commentary.Isboundary) {
+              event = commentary.Batsman_Runs;
+              eventText = `${commentary.Batsman_Name} hits a brilliant ${commentary.Batsman_Runs} runs!`;
+            } else if (commentary.Iswicket) {
+              event = 'out';
+              eventText = `${commentary.Bowler_Name} takes a crucial wicket!`;
+            } else if (commentary.Milestone) {
+              let milestone = commentary.Milestone.find(milestone => milestone.Event_Type_Id === 1 || milestone.Event_Type_Id === 2);
+              if (milestone) {
+                if (milestone.Event_Type_Id === 1) {
+                  let runs = parseInt(milestone.Event.replace(' Runs', ''));
+                  if (runs && runs <= 400) {
+                    
+                    let eventTextUtil = '';
+                    switch (runs) {
+                      case 50:
+                        eventTextUtil = `${matchData?.Teams[milestone.Team_Id]?.Name_Short} reaches 50 runs!`;
+                        break;
+                      case 100:
+                        eventTextUtil = `${matchData?.Teams[milestone.Team_Id]?.Name_Short} reaches the century mark!`;
+                        break;
+                      case 150:
+                        eventTextUtil = `${matchData?.Teams[milestone.Team_Id]?.Name_Short} surpasses 150 runs!`;
+                        break;
+                      case 200:
+                        eventTextUtil = `200 runs on the board for ${matchData?.Teams[milestone.Team_Id]?.Name_Short}!`;
+                        break;
+                      case 250:
+                        eventTextUtil = `${matchData?.Teams[milestone.Team_Id]?.Name_Short} reaches the 250 runs!`;
+                        break;
+                    }
+                    event = runs;
+                    if (event == runs)
+                      teamMileStone = true;
+                    playerMileStone = false;
+                    eventText = eventTextUtil;
+                  }
+                } else if (milestone.Event_Type_Id === 2) {
+                  let runs = parseInt(milestone.Event.replace(' Runs', ''));
+                  if (runs && runs <= 500) {
+                    let eventTextUtil = '';
+                    switch (runs) {
+                      case 50:
+                        eventTextUtil = `${commentary?.Batsman_Name} hits a brilliant 50 runs!`;
+                        break;
+                      case 100:
+                        eventTextUtil = `${commentary?.Batsman_Name} achieves a fantastic century!`;
+                        break;
+                      case 150:
+                      case 200:
+                      case 250:
+                        eventTextUtil = `${commentary?.Batsman_Name} achieves a remarkable ${runs} runs!`;
+                        break;
+                    }
+                    event = runs;
+                    teamMileStone = false;
+                    if (event == runs)
+                      playerMileStone = true;
+                    eventText = eventTextUtil;
+                  }
+                }
+              }
+            } else {
+              event = null;
+              playerMileStone = false;
+              teamMileStone = false;
+            }
+            break;
+          }
+        }
+        if(matchStatus === '114' && matchDetail?.Winningteam !== '') {
+          event = 'result';
+        }else if(matchStatus === '114') {
+          event = null;
+        }
+      }
+      fireGifs();
+
+      function showAdsOnScorecard(event, cardId, teama_short='', teamb_short='') {
+        if (!event || !cardId) return;
+
+        const milestoneObj = teamMileStone 
+        ? htConfig?.cricketScorecard?.eventSponsorAdcodes?.associateSponsorImages?.teamMilestones 
+        : htConfig?.cricketScorecard?.eventSponsorAdcodes?.associateSponsorImages?.playerMilestones;
+
+        const showAds = htConfig?.cricketScorecard?.eventSponsorAdcodes?.showAds
+        let imgSrc = '';
+
+        if ((teamMileStone || playerMileStone) && event !== 'result') {
+          imgSrc = milestoneObj[event];
+        } else {
+          imgSrc = htConfig?.cricketScorecard?.eventSponsorAdcodes?.associateSponsorImages[event];
+        }
+
+        return (`
+          <div class="adsFlex">
+            ${event != 'result' ? `<img src="https://www.hindustantimes.com/static-content/1y/ht/cricket/${event}@3x-50fps.gif"/>` : ''}
+            ${showAds && imgSrc ? `<div class="sponsorsDiv" onclick="redirectToSponsor(event, '${teama_short}', '${teamb_short}')">
+                <div class="adCode87x33">
+                <img src="${imgSrc}"></img>
+              </div> 
+            </div>` : ``}
+          </div>`
+        )
+      }
+
+      const renderLiveCard = () => {
+        const cardId = `crickitCard-${matchfile}`; // Assuming matchId is available in your context
+        const cardContainer = document.getElementById(cardId);
+        const liveCardHTML = `
+          <div class="slide" id="slide-${cardId}">
+            <${ParentElement} id="${cardId}" class="crickitCard ${event ? "scoreAnimation" : ""}" ${matchAbandonedCase ? '' : `href="${formatedUrl.toLowerCase()}" target="_parent" onclick="trackStickyCardTracking('scorecard_clicked', '${cardId}', '${teama_short}', '${teamb_short}')"`}>
+              <div class="cardStatus">
+                <span class="${matchLabelClass}">${matchLabel}</span>
+              </div>
+              <div class="cardDetailArea">
+                <div class="teamSec">
+                  <div class="teamGroup">
+                    <div class="teamlogo ${winningteamId?.length && teamAId != winningteamId ? 'muted' : ''}">
+                      <img src="https://www.hindustantimes.com/static-content/1y/cricket-logos/teams/logo/${teama_short}.png?v2" alt="${teama_short}" title="${teama_short}">
+                    </div>
+                    <span class="teamName">${inning[teamAId]?.Name_Short || teama_short}</span>
+                  </div>
+                  <div class="${(winningteamId?.length ? teamAId != winningteamId : currentInning?.Battingteam != teamAId) ? 'teamMuted' : 'teamInfo'}">
+                    ${TeamInnings(teamAId, matchtype, winningteamId?.length ? teamAId == winningteamId : currentInning?.Battingteam == teamAId, winningteamId?.length && teamAId == winningteamId)}
+                  </div>
+                </div>
+                <div class="teamSec">
+                  <div class="teamGroup">
+                    <div class="teamlogo ${winningteamId?.length && teamBId != winningteamId ? 'muted' : ''}">
+                      <img src="https://www.hindustantimes.com/static-content/1y/cricket-logos/teams/logo/${teamb_short}.png?v2" alt="${teamb_short}" title="${teamb_short}">
+                    </div>
+                    <span class="teamName">${inning[teamBId]?.Name_Short || teamb_short}</span>
+                  </div>
+                  <div class="${(winningteamId?.length ? teamBId != winningteamId : currentInning?.Battingteam != teamBId) ? 'teamMuted' : 'teamInfo'}">
+                    ${TeamInnings(teamBId, matchtype, winningteamId?.length ? teamBId == winningteamId : currentInning?.Battingteam == teamBId, winningteamId?.length && teamBId == winningteamId)}
+                  </div>
+                </div>
+              </div>
+             ${htConfig?.cricketScorecard?.eventSponsorAdcodes?.showAds ? `<div class="centerAds">
+                <div class="sponsorsDiv" onclick="redirectToSponsor(event, '${teama_short}', '${teamb_short}')">
+                  <div class="adCode87x33">
+                    <img src="${htConfig?.cricketScorecard?.eventSponsorAdcodes?.associateSponsorImages?.sponsorCardImage}"></img>
+                  </div>
+                </div>
+              </div>` : ``}
+              <div class="imgAndAds">
+                <div class="emojiAnimation">
+                  ${event == 'result' ?
+                      `${showAdsOnScorecard('result', cardId, teama_short, teamb_short) || ''}<span>${matchStatusText || ''}</span>` 
+                      : 
+                      `${showAdsOnScorecard(event, cardId, teama_short, teamb_short) || ''}<span>${eventText || ''}</span>`
+                  }
+                </div>
+              </div>
+              <div class="cardMsg">
+                <span>${matchStatusText}</span>
+              </div>
+            </${ParentElement}>
+          </div>  
+          `;   
+          
+          if (cardContainer) {  // Update existing card
+            cardContainer.parentElement.outerHTML = liveCardHTML;
+          } else {  // Create and append new card
+            const newSlide = document.createElement('div');
+            newSlide.innerHTML = liveCardHTML;
+            document.querySelector('.cardSlideArea').appendChild(newSlide.firstElementChild);
+
+            const existingDot = document.querySelector(`.cardPagings .dot[data-card-id="${cardId}"]`);
+            if (!existingDot) {
+              const dot = document.createElement('span');
+              dot.innerHTML = `<span class="dot" data-card-id="${cardId}"></span>`;
+              document.querySelector('.cardPagings').appendChild(dot.firstElementChild);
+            }
+          }
+        };
+      renderLiveCard();
+
+      const crickitCardDiv = document.getElementById(`crickitCard-${matchfile}`);
+      // Function to handle the event state change and class removal
+      function handleEventChange() {
+          setTimeout(() => {
+              event = null;
+              if (crickitCardDiv && crickitCardDiv.classList.contains('scoreAnimation')) {
+                crickitCardDiv.classList.remove('scoreAnimation');
+                crickitCardDiv.classList.add('removeAnimation');
+              }
+          }, 5000);
+      }
+      handleEventChange();
+    }
+
+    const upcomingCard = async (matchData) => {
+        const matchDetail = matchData?.Matchdetail;
+        const matchObject = matchDetail?.Match;
+        const dateStr = matchObject?.Date;
+        const timeStr = matchObject?.Time;
+        const offsetString = matchObject?.Offset;
+
+        const date = new Date(dateStr + ' ' + timeStr);
+        let dateObj = date;
+        const month = dateObj.toLocaleString('default', { month: 'short' });
+        const dayName = dateObj.toLocaleDateString('default', {
+        weekday: 'short',
+        });
+        const year = dateObj.toLocaleDateString('default', {
+        year: '2-digit',
+        });
+
+        if (offsetString != '+05:30') {
+        // Parse the date as UTC
+        const sign = offsetString[0] === '+' ? -1 : 1;
+        const [offsetHours, offsetMinutes] = offsetString
+          .slice(1)
+          .split(':')
+          .map(Number);
+        const offsetInMinutes = sign * (offsetHours * 60 + offsetMinutes);
+        const offsetInMilliseconds = offsetInMinutes * 60 * 1000;
+        const utcDate = new Date(date.getTime() + offsetInMilliseconds);
+
+        // Parse the offset to IST
+        const ISTOffset = '+05:30';
+        const ISTSign = ISTOffset[0] === '+' ? 1 : -1;
+        const [ISTOffsetHours, ISTOffsetMinutes] = ISTOffset.slice(1)
+          .split(':')
+          .map(Number);
+        const ISTOffsetInMinutes =
+          ISTSign * (ISTOffsetHours * 60 + ISTOffsetMinutes);
+        const ISTOffsetInMilliseconds = ISTOffsetInMinutes * 60 * 1000;
+        dateObj = new Date(utcDate.getTime() + ISTOffsetInMilliseconds);
+        }
+
+          // Rest of the code...
+
+          const teamList = Object.entries(matchData?.Teams).map(([teamId, teamInfo]) => ({
+            TeamId: teamId,
+            ...teamInfo,
+          }));
+
+          const teama_short = teamList[0]?.Name_Short;
+          const teamb_short = teamList[1]?.Name_Short;
+
+          const teama_full = teamList[0]?.Name_Full;
+          const teamb_full = teamList[1]?.Name_Full;
+
+          matchStatus = matchDetail?.Status_Id;
+
+          const checkForDelay = () => {
+            const currentDate = new Date();
+            const dateToCheck = new Date(dateObj);
+            const diffInMs = dateToCheck.getTime() - currentDate.getTime();
+            isDelayed = diffInMs < 0;
+          };
+
+          const checkForAbandoned = () => {
+            isAbandoned = matchStatus === '130' || matchStatus === '131';
+          };
+
+          const checkForToss = () => {
+            isToss = matchStatus === '127';
+          };
+
+          checkForDelay();
+          checkForAbandoned();
+          checkForToss();
+
+          const teama_slug = teama_full?.toLowerCase().replaceAll(' ', '-');
+          const teamb_slug = teamb_full?.toLowerCase().replaceAll(' ', '-');
+
+          let teamAId = teamList[0]?.TeamId;
+          let teamATossId = teamList[0]?.TeamId;
+          let innings = matchData?.Innings;
+          let teamBId = teamList[1]?.TeamId;
+
+          if (innings && innings[0]?.Battingteam === teamBId) {
+            teamAId = teamList[1]?.TeamId;
+          }
+
+          const matchnumber = matchObject?.Number;
+          const matchtype = matchObject?.Type;
+          const matchfile = matchObject?.Code;
+          const city = matchDetail?.Venue?.City;
+          const series_short_display_name = matchDetail?.Series?.Series_short_display_name;
+          const statusId = matchDetail?.Status_Id;
+          const matchLabel = isToss ? 'TOSS' : isAbandoned ? 'ABANDONED' : isDelayed ? 'DELAYED' : isMatchToday(matchObject?.Date) ? 'TODAY' : 'UPCOMING';
+          const matchLabelClass = matchStatusDictRenewForLiveBlog[statusId]
+            ? matchStatusDictRenewForLiveBlog[statusId][1]
+            : 'upcoming';
+          let matchStatusMessage = matchDetail?.Result || matchDetail?.Equation || matchDetail?.Status;
+          if (isToss) {
+            let tossWonByTeam = matchDetail?.Tosswonby === teamATossId ? teama_short : teamb_short;
+            let electedTo = matchDetail?.Toss_elected_to;
+            matchStatusMessage = matchDetail?.Tosswonby ? `Toss won by ${tossWonByTeam} and elected to ${electedTo}` : '';
+          }
+          let matchStatusText = matchStatusMessage.replace(teama_full, teama_short).replace(teamb_full, teamb_short);
+          const showLinking = onlyForHt && teama_short !== 'TBC' && teamb_short !== 'TBC';
+
+          const ParentElement = showLinking && !isAbandoned ? 'a' : 'div';
+
+          let attributes = {};
+          const addAttributes = (cardId) => {
+            if (showLinking) {
+              let url = `${teama_short.toLowerCase()}-vs-${teamb_short.toLowerCase()}${
+                series_short_display_name ? `-${series_short_display_name?.trim()}` : ''
+              }-${matchnumber}-${teama_slug}-vs-${teamb_slug}-${matchtype}-live-score-${matchfile}`;
+              let formatedUrl =
+                domain?.upcoming +
+                url
+                  ?.replace(/,/g, '')
+                  ?.replace(/\//g, '')
+                  ?.replace(/_/g, '')
+                  ?.replace(/:/g, '')
+                  ?.replace(/\s+/g, '-')
+                  ?.replace(/'/g, '')
+                  ?.replace(/---/g, '-');
+              attributes = { href: formatedUrl.toLowerCase(), target: '_parent', onclick: `trackStickyCardTracking('scorecard_clicked', '${cardId}', '${teama_short}', '${teamb_short}')` };
+              return attributes
+            }  
+          };
+
+          const formatTimeInAMPM = (hours, minutes) => {
+        let convertedHours = parseInt(hours);
+        let period = convertedHours >= 12 ? 'PM' : 'AM';
+
+        if (convertedHours === 0) {
+          convertedHours = 12;
+        } else if (convertedHours > 12) {
+          convertedHours -= 12;
+        }
+
+        const formattedHours = convertedHours < 10 ? `0${convertedHours}` : convertedHours;
+        const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+
+        return `${formattedHours}:${formattedMinutes} ${period}`;
+        };
+
+          const isWithin24Hours = dateString => {
+            const currentDate = new Date();
+            const dateToCheck = new Date(dateString);
+            const diffInMs = dateToCheck.getTime() - currentDate.getTime();
+            const diffInSecs = diffInMs / 1000;
+            const diffInMins = diffInSecs / 60;
+            const diffInHours = diffInMins / 60;
+            if (diffInHours <= 24) {
+              const remainingHours = Math.floor(diffInHours);
+              const remainingMins = Math.floor((diffInHours - remainingHours) * 60);
+              const remainingSecs = Math.floor(((diffInHours - remainingHours) * 60 - remainingMins) * 60);
+              timeLeft = {
+                hr: remainingHours,
+                min: remainingMins,
+                sec: remainingSecs,
+              };
+              if (remainingHours < 0) {
+                return [false, diffInMs];
+              } else {
+                return [true, diffInMs];
+              }
+            } else {
+              return [false, diffInMs];
+            }
+          };
+
+          showReminder = isWithin24Hours(dateObj)[0];
+
+          const reminderFunction = () => {
+            [showReminder, diff] = isWithin24Hours(dateObj);
+            if (diff >= 0) {
+              upcomingIncr = upcomingIncr + 1;
+              renderCard(); 
+            }else {
+              init();
+              clearInterval(interval);
+            }
+          };
+
+          const formatDateInDayFirstFormat = dateString => {
+          const date = new Date(dateString);
+          const month = months[date.getMonth()];
+          const day = date.getDate() < 10 ? `0${date.getDate()}` : date.getDate();
+          const year = date.getFullYear();
+          return `${day} ${month}, ${year}`;
+          };
+
+          const formattedDate = formatDateInDayFirstFormat(dateStr);
+          const formattedTime = formatTimeInAMPM(
+          dateObj.getHours(),
+          dateObj.getMinutes()
+          );
+
+          let interval;
+          let checkForRem = isWithin24Hours(dateObj)[0];
+          if (checkForRem) {
+            interval = setInterval(reminderFunction, 1000);
+          }
+
+            // Render the component using vanilla JavaScript
+          const renderCard = () => {
+            const cardId = `${ParentElement}-${matchfile}`
+            const cardContainer = document.getElementById(cardId);
+            const upcomingCard = `
+            <div class="slide" id="slide-${cardId}">
+               <${ParentElement}  ${Object.entries(addAttributes(cardId))
+                .map(([key, value]) => `${key}="${value}"`)
+                .join(' ')} class="crickitCard upcome" id="${cardId}">
+                <!-- <div class="cardStatus">
+                  <span class="${matchLabelClass}">${matchLabel}</span>
+                </div> -->
+                
+                  ${
+                    showReminder && timeLeft.min > 0 && timeLeft.hr >= 0
+                      ? `
+                      <div class="crickTimer">
+                        <ul class="timerBg">
+                          <li>
+                            <strong>${timeLeft.hr}</strong>
+                            <span>${t ? t('cricket.upcoming.scorecard.hrs') : 'Hrs'}</span>
+                          </li>
+                          <li>
+                            <strong>${timeLeft.min}</strong>
+                            <span>${t ? t('cricket.upcoming.scorecard.mins') : 'Mins'}</span>
+                          </li>
+                          <li>
+                            <strong>${timeLeft.sec}</strong>
+                            <span>${t ? t('cricket.upcoming.scorecard.sec') : 'Sec'}</span>
+                          </li>
+                        </ul></div>
+                      `
+                      : ( isDelayed || isAbandoned || isToss) ? `
+                        <div class="cardMsg">
+                          <span>${matchStatusText}</span>
+                        </div>
+                      `
+                      : 
+                      `<div class="crickTimer"><ul class="timerBg">
+                          <li>
+                        <strong>${formattedDate}</strong>
+                        <strong>${formattedTime}</strong></li></ul></div>
+                      `
+                  }
+                
+                <div class="cardDetailArea">
+                  <div class="teamSec">
+                    <div class="teamGroup pb0">
+                      <div class="teamlogo">
+                        <img src="https://www.hindustantimes.com/static-content/1y/cricket-logos/teams/logo/${teama_short}.png?v2" alt="${teama_short}" title="${teama_short}" />
+                      </div>
+                    </div>
+                    <strong class="teamDesk">${teama_short}</strong>
+                    <strong class="teamMob">${teama_short}</strong>
+                  </div>
+                  <div class="teamSec">
+                    <div class="teamGroup pb0">
+                      <div class="teamlogo">
+                        <img src="https://www.hindustantimes.com/static-content/1y/cricket-logos/teams/logo/${teamb_short}.png?v2" alt="${teamb_short}" title="${teamb_short}" />
+                      </div>
+                    </div>
+                    <strong class="teamDesk">${teamb_short}</strong>
+                    <strong class="teamMob">${teamb_short}</strong>
+                  </div>
+                </div>
+                ${htConfig?.cricketScorecard?.eventSponsorAdcodes?.showAds ?
+                `<div class="centerAds">
+                  <div class="sponsorsDiv" onclick="redirectToSponsor(event, '${teama_short}', '${teamb_short}')">
+                    <div class="adsImgPlace">
+                      <div class="adCode87x33">
+                        <img src="${htConfig?.cricketScorecard?.eventSponsorAdcodes?.associateSponsorImages?.sponsorCardImage}"></img>
+                      </div>
+                    </div> 
+                  </div>
+                </div>` : ``}
+              </${ParentElement}>
+            </div>
+            `;
+            
+            if (cardContainer) { // Update the existing card
+              cardContainer.parentElement.outerHTML = upcomingCard;
+            } else { // Create a new card and its dot
+              const newSlide = document.createElement('div');
+              newSlide.innerHTML = upcomingCard;
+              document.querySelector('.cardSlideArea').appendChild(newSlide.firstElementChild);
+
+              const existingDot = document.querySelector(`.cardPagings .dot[data-card-id="${cardId}"]`);
+              if (!existingDot) {
+                const dot = document.createElement('span');
+                dot.innerHTML = `<span class="dot" data-card-id="${cardId}"></span>`;
+                document.querySelector('.cardPagings').appendChild(dot.firstElementChild);
+              }
+            }
+          }
+          renderCard();
+
+          function isMatchToday(matchDateStr) {
+            const today = new Date();
+            const matchDate = new Date(matchDateStr);
+
+            return (
+                matchDate.getDate() === today.getDate() &&
+                matchDate.getMonth() === today.getMonth() &&
+                matchDate.getFullYear() === today.getFullYear()
+              );
+          }
+        }
+    
+    let upcomingStatusList = ['115', '125', '130', '131', '150', '160', '127'];
+    const matchId = searchParams.get('q');
+    let matchFiles = [];
+
+    let scrollContainer = document.querySelector('.slides');
+    let currentSlide = 0;
+    let scrollAmount = 0;     
+    const autoScrollDuration = 2000; // Duration for auto-scroll
+    let startX, currentX, moveX = 0;
+    let scorecardAutoSlide = true;
+
+
+    function updatePagination(index) {
+      const dots = document.querySelectorAll('.dot');
+          dots.forEach(dot => dot.classList.remove('active'));
+          let matchNumber = document.getElementById("matchNumber");
+          const totalMatches = document.querySelectorAll('.slide').length;
+          if (matchNumber && ((totalMatches > 0 && source === 'amp') || (totalMatches > 1 && source !== 'amp'))) {
+            const matchNODisplay = (index !== matchFiles.length) ? index+1 : index;
+            matchNumber.innerHTML = `Matches ${matchNODisplay}/${totalMatches}`;
+          }
+          if (dots[index]) {
+            dots[index].classList.add('active');
+          }
+        }
+
+    function slidePrevious() {
+      const screenWidth = window.innerWidth;
+      const scrollStep = !isMobile ? 500 : screenWidth - 40; // The width of each item  
+      scrollAmount = Math.max(scrollAmount - scrollStep, 0);
+      if (currentSlide > 0) {
+          currentSlide = currentSlide - 1;
+          updatePagination(currentSlide);
+          scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
+      }    
+    }  
+
+    function slideNext() {
+      const screenWidth = window.innerWidth;
+      const scrollStep = !isMobile ? 500 : screenWidth - 40; // The width of each item  
+      const maxScroll = scrollContainer?.scrollWidth - scrollContainer?.parentElement?.clientWidth;
+      scrollAmount = Math.min(scrollAmount + scrollStep, maxScroll);
+      const slides = document.querySelectorAll('.slide');
+      if (currentSlide < slides.length - 1) {
+        currentSlide = currentSlide + 1;
+        updatePagination(currentSlide);
+        scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
+      }         
+    }
+
+    let totalMatches = '';
+    // sticky slider
+    document.addEventListener('DOMContentLoaded', () => {
+      function initializeSlider() {
+        function checkCookie() {
+          let user = getCookie('scorecardAutoSlided');
+          if (user != '') {
+            scorecardAutoSlide = false;
+          }
+        }
+        checkCookie();
+
+        function autoSlide() {
+          setCookie('scorecardAutoSlided', 'true', 15);
+          slideNext();
+          setTimeout(slidePrevious, autoScrollDuration)
+        }
+
+        // Set up initial auto-scroll
+        updatePagination(currentSlide);
+        scorecardAutoSlide && setTimeout(autoSlide, autoScrollDuration);
+      
+        scrollContainer.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            // e.preventDefault();
+        });
+
+        scrollContainer.addEventListener('touchmove', (e) => {
+            currentX = e.touches[0].clientX;
+            moveX = currentX - startX;
+            moveX = moveX < 0 ? moveX : moveX;
+            // e.preventDefault();
+            // scrollContainer.style.transform = `translateX(-${moveX}px)`;
+        });
+
+        scrollContainer.addEventListener('touchend', () => {
+          const slideThreshold = 70; // Threshold for sliding
+          if (moveX < -slideThreshold) {
+              slideNext();
+          } else if (moveX > slideThreshold) {
+              slidePrevious();
+          } else {
+              // Snap back to the original position if the movement is below the threshold
+              // scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
+          }
+          moveX = 0;
+        });
+
+        const pagination = document.querySelector('.cardPagings');
+        const totalMatches = document.querySelectorAll('.slide').length;
+        if (pagination) {
+          (source === 'amp' && totalMatches <= 0) || (source !== 'amp' && totalMatches <= 1) ? pagination.style.display = 'none' : pagination.style.display = 'flex';
+        }
+
+        const slideNextButton = document.getElementById('slideNextButton');
+        if (slideNextButton) {     
+          (source === 'amp' && totalMatches <= 0) || (source !== 'amp' && totalMatches <= 1) ? slideNextButton.style.display = 'none' : !isMobile ? slideNextButton.style.display = 'block' : '';
+        }
+
+        const slidePreviousButton = document.getElementById('slidePreviousButton');
+        if (slidePreviousButton) {
+          (source === 'amp' && totalMatches <= 0) || (source !== 'amp' && totalMatches <= 1) ? slidePreviousButton.style.display = 'none' : !isMobile ? slidePreviousButton.style.display = 'block' : '';
+        }
+      }
+
+      let isInitializing = false;
+      let initializationTimeout;
+
+      const observer = new MutationObserver((mutationsList, observer) => {
+        if (!isInitializing) {
+            isInitializing = true;
+            clearTimeout(initializationTimeout);
+            initializationTimeout = setTimeout(() => {
+                initializeSlider(); // Reinitialize slider on DOM changes
+                isInitializing = false;
+            }, 100); // Adjust the debounce time as needed
+        } 
+      });
+
+      // Start observing the target node for configured mutations
+      observer.observe(scrollContainer, { childList: true, subtree: true }); 
+    });
+
+    const getHtConfig = async () => {
+      try {
+        const res = await fetch('https://www.hindustantimes.com/static-content/1m/ht-config.json');
+        if (res.ok) {
+          return await res.json();
+        } else {
+          console.log('Failed to fetch ht-config.json');
+        }
+      } catch (error) {
+        console.error('Failed to fetch ht-config.json:', error);
+      }
+    }
+    
+    let liveMatchFiles = [];
+    let isCohortStory = false;
+    let currentInterval;
+
+    const getMatchData = async matchFile => {
+      if (matchFile !== 'undefined' && matchFile !== null) {
+        try {
+          const matchData = await fetch(
+            `https://www.hindustantimes.com/static-content/10s/${matchFile}.json`
+          );
+          return matchData.json();
+        } catch (error) {
+          console.error(`Error fetching match data for ${matchFile}:`, error);
+          return {};
+        }
+      }
+      return {};
+    };
+
+    const updateLiveMatches = async () => {
+      try {
+        const matchDataArray = await Promise.all(liveMatchFiles.map(getMatchData));
+        matchDataArray.forEach(matchData => {
+          adIncrement = adIncrement + 1;
+          LiveCard(matchData); // Update the live scorecard
+        });
+      } catch (error) {
+        console.error('Failed to update live match data in scorecard:', error);
+      }
+    };
+
+    const getMatch = async (matchIds, startInterval = false) => {
+      try {
+        const matchDataArray = await Promise.all(matchIds?.map(getMatchData));
+        matchDataArray?.forEach(matchData => {
+          const matchStatus = matchData.Matchdetail?.Status_Id;
+          if(refreshStatus.includes(matchStatus))
+            liveMatchFiles.push(matchData?.Matchdetail?.Match?.Code);
+
+          if (upcomingStatusList?.includes(matchStatus)) {
+            upcomingCard(matchData); // upcoming scorecard
+          } else {
+            if (isHomePage && statusToShowOnHomepage.includes(matchStatus)) {
+              LiveCard(matchData); // live scorecard
+            } else if (!isHomePage) {
+              LiveCard(matchData); // live scorecard
+            }
+          }
+        });
+
+      } catch (error) {
+          console.error('Failed to fetch match data in scorecard:', error);
+      }
+    };
+
+    const getLiveMatches = (liveMatches, htconfig) => {
+      try {
+        const matchPriority = htconfig?.cricketScorecard?.matchPriority;
+        let filteredMatches = [];
+        let otherMatches = [];
+
+        for (const match of liveMatches || []) {
+          if (isIndianOrIplMatch(match)) {
+            matchFiles.push(match);
+          } else {
+            !isCohortStory && !isHomePage && otherMatches.push(match);
+          }
+        };
+        // matchFiles = orderIndianMatches(matchFiles);
+
+        const indianMatchesOrder = [
+          { teamName: 'ind' },
+          { leagueName: 'ipl' },
+          { teamName: 'ind-w' },
+          { teamName: 'ind-u19' }
+        ];
+        const sortedIndianMatches = [];
+
+        indianMatchesOrder.forEach(({teamName, leagueName}) => {
+          const matches = matchFiles.filter(match => match.teamlist[0]?.name_Short?.toLowerCase() === teamName || match.teamlist[1]?.name_Short?.toLowerCase() === teamName || match.matchdetail.match.league.toLowerCase() === leagueName);
+          sortedIndianMatches.push(...matches);
+        });
+
+
+        !isCohortStory && matchPriority?.forEach((priority) => {
+          filteredMatches?.push(...otherMatches?.filter((match) => { if(match?.matchdetail?.match?.league === priority) return match?.matchdetail?.match?.code }));
+        });
+
+ 
+        matchFiles = [...sortedIndianMatches.map(match => match?.matchdetail?.match?.code), ...filteredMatches.map(match => match?.matchdetail?.match?.code)];
+
+      } catch(error) {
+        console.error('Error in getting live matches', error);
+      }  
+    };
+
+    // only shows upcoming INDIA matches
+    const getUpcomingMatches = (upcomingMatches, htconfig) => {
+      const upcomingMatchFiles = [];
+      for (const match of upcomingMatches || []) {
+        if ((match.teama_short?.toLowerCase().includes('ind') || match.teamb_short?.toLowerCase().includes('ind')) || (match.league.toLowerCase() === 'ipl') && (match.league.toLowerCase() !== 'indian_domestic' || match.league.toLowerCase() !== 'domestic')) {
+          const matchStartTimestamp = new Date(match?.matchStartTimestamp).getTime();
+          const now = new Date().getTime();
+          const timeDiff = matchStartTimestamp - now;
+
+          if(isCohortStory) {
+            if(timeDiff < 1000*60*60*1) {
+              upcomingMatchFiles.push(match);
+            }
+          }else {
+            if (timeDiff < htconfig?.cricketScorecard?.showUpcomingMatchesTill) {
+              upcomingMatchFiles.push(match);
+            }
+          }
+        }
+      };
+
+      const indianMatchesOrder = [
+          { teamName: 'ind' },
+          { leagueName: 'ipl' },
+          { teamName: 'ind-w' },
+          { teamName: 'ind-u19' }
+        ];
+      const sortedIndianMatches = [];
+
+      indianMatchesOrder.forEach(({teamName, leagueName}) => {
+        const matches = upcomingMatchFiles.filter(match => match.teama_short?.toLowerCase() === teamName || match.teamb_short?.toLowerCase() === teamName || match.league.toLowerCase() === leagueName);
+        sortedIndianMatches.push(...matches);
+      });
+
+      matchFiles.push(...sortedIndianMatches.map(match => match?.matchfile));
+    };
+
+    // only shows INDIA's result matches
+    const getResultsMatches = (resultMatches, htconfig) => {
+      const resultMatchFiles = [];
+      for (const match of resultMatches || []) {
+        if (isIndianOrIplMatch(match) && match?.matchdetail?.status_Id === '114') {
+          const [month, day, year] = match?.endMatchDateGMT.split('/');
+          const isoDate = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+          const dateTimeISO = `${isoDate}T${match?.endMatchTimeGMT}:00.000Z`;
+          const matchDate = new Date(dateTimeISO);
+          const matchDateTimeMillis = matchDate.getTime();
+          const now = new Date().getTime();
+          const timeDiff = now - matchDateTimeMillis;
+
+          if(isCohortStory) {
+            if(timeDiff < 1000*60*60*3) {
+              resultMatchFiles.push(match);
+            }
+          }else {
+          if (timeDiff < htconfig?.cricketScorecard?.showResultMatchesTill) {
+            matchFiles.push(match?.matchdetail?.match?.code);
+          }
+        }
+        }
+      };
+
+      const indianMatchesOrder = [
+          { teamName: 'ind' },
+          { leagueName: 'ipl' },
+          { teamName: 'ind-w' },
+          { teamName: 'ind-u19' }
+        ];
+
+      const sortedIndianMatches = [];
+
+      indianMatchesOrder.forEach(({teamName, leagueName}) => {
+        const matches = resultMatchFiles.filter(match => match.teamlist[0]?.name_Short?.toLowerCase() === teamName || match.teamlist[1]?.name_Short?.toLowerCase() === teamName || match.matchdetail.match.league.toLowerCase() === leagueName);
+        sortedIndianMatches.push(...matches);
+      });
+
+      matchFiles.push(...sortedIndianMatches.map(match => match?.matchdetail?.match?.code));
+      return sortedIndianMatches;
+    }
+
+    // Inside the iframe script
+    function adjustIframeHeight() {
+      let iframeHeight = '';
+      let totalMatches = document.querySelectorAll('.slide').length || 0;
+
+      if (totalMatches > 1) {
+        iframeHeight = isMobile ? '135' : '140';
+      } else if (totalMatches === 1) {
+        iframeHeight = '122';
+      } else {
+        iframeHeight = '0';
+      }
+      window.parent.postMessage({ type: 'adjustIframeHeight', height: iframeHeight }, '*');
+    }
+
+    function isMatchEndedRecently(matchData) {
+      	const endDateStr = matchData.Matchdetail.Match.End_date;
+        const endTimeStr = matchData.Matchdetail.Match.End_time;
+        const offsetStr = matchData.Matchdetail.Match.Offset;
+
+        const [month, day, year] = endDateStr.split('/');
+        const [hours, minutes] = endTimeStr.split(':');
+        const [offsetHours, offsetMinutes] = offsetStr.substring(1).split(':');
+        
+        const endDate = new Date(Date.UTC(
+          parseInt(year),
+          parseInt(month) - 1,
+          parseInt(day),
+          parseInt(hours) - parseInt(offsetHours),
+          parseInt(minutes) - parseInt(offsetMinutes)
+        ));
+
+
+        const currentTime = new Date();
+        const timeDifference = currentTime - endDate;
+        const timeDifferenceInHours = timeDifference / (1000 * 60 * 60);
+        return timeDifferenceInHours <= 1;
+    }
+
+    const isIndianOrIplMatch = (match) => {
+      return (match.teamlist[0]?.name_Short?.toLowerCase().includes('ind') || match.teamlist[1]?.name_Short?.toLowerCase().includes('ind')) || (match.matchdetail.match.league.toLowerCase() === 'ipl')  && (match.matchdetail.match.league.toLowerCase() !== 'indian_domestic' || match.matchdetail.match.league.toLowerCase() !== 'domestic');
+      
+    }
+
+    let liveMatchInterval;
+    const getMatchId = async (htconfig) => {
+      try {
+        const res = await fetch('https://www.hindustantimes.com/static-content/10s/cricket-liupre.json');
+        const matchData = await res.json();
+        const liveMatches = matchData?.live || [];
+        const upcomingMatches = matchData?.upcoming || [];
+        const resultMatches = matchData?.results || [];
+ 
+        getLiveMatches(liveMatches, htconfig);
+        !isHomePage && getResultsMatches(resultMatches, htconfig);
+        !isHomePage && getUpcomingMatches(upcomingMatches, htconfig);
+
+        if(searchParams.get('q') && !isCohortStory && !isHomePage) {
+          const matchId = searchParams.get('q');
+              const taggedMatchDataFile = await getMatchData(matchId);
+              const resultOrAbnTagMatch = (['114', '113']).includes(taggedMatchDataFile?.Matchdetail?.Status_Id);
+              const firstLiveMatchIDToBeShown = matchFiles && matchFiles.length>0 && matchFiles[0];
+              const firstLiveMatchToBeShown = liveMatches.find(match => match.matchdetail?.match?.code === firstLiveMatchIDToBeShown);
+              const isIndianOrIplMatchLive = firstLiveMatchToBeShown && isIndianOrIplMatch(firstLiveMatchToBeShown);
+              if (isIndianOrIplMatchLive) {
+                if(resultOrAbnTagMatch) {
+                  if(isMatchEndedRecently(taggedMatchDataFile)) {
+              matchFiles.unshift(matchId);
+            } else {            
+              matchFiles.push(matchId);
+            }
+                }else {
+                  if(taggedMatchDataFile?.Matchdetail?.Status_Id !== '120')
+                    matchFiles.unshift(matchId);
+                  else matchFiles.push(matchId)
+                }
+              }else {
+                matchFiles.unshift(matchId);
+              }
+        }
+
+        if (searchParams.get('q') && isHomePage) {
+          const matchIds = searchParams.get('q').split(';')?.filter(Boolean);
+          matchIds?.forEach(matchId => {
+            if (!matchFiles?.includes(matchId)) {
+              matchFiles?.push(matchId);
+            }
+          });
+        }
+
+        const preferencedMatchTour = [];
+
+        const liveMatchStatus = [
+          '10',
+          '11',
+          '12',
+          '13',
+          '14',
+          '15',
+          '16',
+          '17',
+          '18',
+          '19',
+          '119',
+          '117',
+          '110',
+          '115',
+          '116',
+          '112',
+          '118',
+          '120',
+          '121',
+          '122',
+          '123',
+          '124',
+          '126',
+          '127'
+        ];
+
+        if(htconfig?.cricketScorecard?.preferencedMatchTour) {
+          for(const matchID of matchFiles) {
+            if(preferencedMatchTour.length > 5) break;
+            const preferencedMatch = await getMatchData(matchID);
+            if(preferencedMatch?.Matchdetail?.Series?.Tour === htconfig?.cricketScorecard?.preferencedMatchTour && liveMatchStatus.includes(preferencedMatch?.Matchdetail?.Status_Id)) {
+              preferencedMatchTour.push(preferencedMatch);
+            }
+          }
+        }
+
+        matchFiles = matchFiles.filter(match => !preferencedMatchTour.some(preferencedMatch => preferencedMatch?.Matchdetail?.Match?.Code === match));
+			  matchFiles.unshift(...preferencedMatchTour.map(match => match?.Matchdetail?.Match?.Code));
+
+        if(htconfig?.cricketScorecard?.preferencedMatchFile) {
+          const preferencedMatchFile = await getMatchData(htconfig?.cricketScorecard?.preferencedMatchFile);
+          matchFiles.unshift(preferencedMatchFile?.Matchdetail?.Match?.Code);
+        }
+
+        if (matchFiles?.length > 0) {
+          matchFiles = [...new Set(matchFiles)].slice(0, 15);
+          // Call the function whenever you need to adjust the height
+          window.onload = adjustIframeHeight;
+          window.onresize = adjustIframeHeight;
+          await getMatch(matchFiles, true);
+          if (liveMatchFiles?.length > 0) {
+            // Clear any existing interval before setting a new one
+            if (liveMatchInterval) {
+              clearInterval(liveMatchInterval);
+            }
+            // Set a new interval for updating live matches
+            liveMatchInterval = setInterval(updateLiveMatches, 20000);
+          }
+        }
+        
+        if(source === 'amp' && !document.querySelector('#echoDiv')) {
+        let echoEle = `<a id="echoDiv" href="https://www.hindustantimes.com/cricket" class="echoWrapper" target="_parent">
+          <div class="detailSec">
+              <div class="explore">
+                  <img class="shineStar" src="https://www.hindustantimes.com/static-content/1y/ht/cricket/shineStar_wid.gif" alt="" title="" />
+                  <span>Explore</span>
+                  <img class="cricketImg" src="https://www.hindustantimes.com/static-content/1y/ht/cricket/crickIt_logo.png" alt="" title="" />
+              </div>
+              <p>Latest Cricket News, Stats, Matches, Photos etc.</p>
+          </div>
+          <div class="imgWrapSec">
+              <img src="https://www.hindustantimes.com/static-content/1y/ht/cricket/liveScore_wid.gif" alt="" title="" />
+          </div>
+      </a>`;
+
+
+      let tempContainer = document.createElement('div');
+      tempContainer.classList.add('slide');
+      tempContainer.addEventListener('click', () => {
+        echoTrackingCall();
+      });
+      tempContainer.innerHTML = echoEle;
+
+      document.querySelector('.cardSlideArea').appendChild(tempContainer);
+      const existingDot = document.querySelector(`.cardPagings .dot[data-card-id="echo-id"]`);
+      if (!existingDot) {
+        const dot = document.createElement('span');
+        dot.innerHTML = `<span class="dot" data-card-id="echo-id"></span>`;
+        document.querySelector('.cardPagings').appendChild(dot.firstElementChild);
+      }
+    }
+      } catch (error) {
+        console.error('Error in getting match Ids', error);
+      }
+
+
+    }  
+
+    const initialize = async () => {
+      const htconfig = await getHtConfig();      
+      htConfig = htconfig;
+      const sponsorAdcodes = htconfig?.cricketScorecard?.eventSponsorAdcodes?.sponsorAdcode;
+      if (device == 'amp') onClickSponsorUrl = sponsorAdcodes?.ampRedirectionUrl;
+      else if (device == 'mobile') onClickSponsorUrl = sponsorAdcodes?.mobileRedirectionUrl;
+      else if (device == 'desktop') onClickSponsorUrl = sponsorAdcodes?.desktopRedirectionUrl;
+      
+      if (htConfig?.cricketScorecard?.eventSponsorAdcodes?.showAds)
+        adSection(sponsorAdcodes[deviceCode], 'sponsorAd1x1');
+      getMatchId(htconfig);
+    }
+
+    (async () => {
+      try {
+        let section = searchParams.get('section') || '';
+        if(searchParams.get('isCohortStory') === 'true' && section.toLowerCase() !== 'cricket') {
+          isCohortStory = true;
+        }
+        if ((section && section.toLowerCase() === 'cricket') || (isCohortStory && section && section.toLowerCase() !== 'cricket') || isHomePage) {
+          await initialize();
+        }
+      } catch (error) {
+          console.error('Initialization failed:', error);
+      }
+    })();
+
+
+    </script>
+    <script>
+      function htGTMGA4(){
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MXGJR36');
+      }
+      htGTMGA4();
+
+      var stickyCard = document.querySelector("#liveScorecard");
+
+      function echoTrackingCall() {
+        let vars = {
+            event_name: 'widget_clicked',
+            widget_name: "HomePage Entry Point Banner",
+            data_source: searchParams.get('source') || 'non_amp',
+            page_type: searchParams.get('page') || 'story',
+            section: searchParams.get('section') || '',
+            sub_section_name: 'scorecard',
+            story_title: searchParams.get('title') || '',
+            current_url: searchParams.get('url') || '',
+            target_url: 'https://www.hindustantimes.com/cricket',
+        };
+        dataLayer.push(vars);
+      }
+
+      function trackStickyCardTracking(eventName, slideId, teama_short='', teamb_short='') {
+        const slide = document?.getElementById(slideId);
+        dataLayer.push({
+          'event': eventName,
+          'page_type': isHomePage ? 'homepage' : searchParams.get('page') || 'story',
+          'section': searchParams.get('section') || '',
+          'sub_section_name': searchParams.get('subSection') || 'scorecard',
+          'article_title': searchParams.get('title') || '',
+          'target_url': slide?.href || '',
+          'current_url': searchParams.get('url') || '',
+          'cta_text': document.querySelector('.cardStatus')?.querySelector('span').textContent?.toLowerCase(),
+          'event_label_2': `${teama_short} vs ${teamb_short}`,	
+          'data_source': searchParams?.get('source') || 'non_amp'
+        })
+      }
+
+      function fireClickTracking(teama_short='', teamb_short='') {
+        dataLayer.push({
+          'event': 'widget_clicked',
+          'widget_name': 'Sponsor Logo Sticky Scorecard',
+          'data_source': searchParams.get('source') || 'non_amp',
+          'page_type': searchParams.get('page') || 'story',
+          'section': searchParams.get('section') || '',
+          'sub_section_name': searchParams.get('subSection') || 'scorecard',
+          'story_title': searchParams.get('title') || '',
+          'story_id' : '',
+          'current_url': searchParams.get('url') || '',
+          'target_url': onClickSponsorUrl || '',
+          'cta_text': htConfig?.cricketScorecard?.eventSponsorAdcodes?.sponsorName ?? '',
+          'event_label_2': `${teama_short} vs ${teamb_short}`,
+          'logged_in_status': getCookie("token")
+                            ? "logged_in"
+                            : "non_logged_in",
+          'user_id':getCookie('_ht_clientid') || null,
+        })
+      }
+
+      function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+        let expires = 'expires=' + d.toUTCString();
+        document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+      }
+
+      function getCookie(cname) {
+        let name = cname + '=';
+        let ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return '';
+      }
+
+    </script>
+</html>
