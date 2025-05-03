@@ -1,0 +1,129 @@
+const world = [
+  {
+    "title": "As Rahul Gandhi picks Telangana over Bihar for caste count  how the two surveys measure up",
+    "url": "https://indianexpress.com/article/political-pulse/rahul-gandhi-telangana-bihar-caste-census-differences-9980948/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "How BJP ‘triple engine’ is pushing for Delhi ‘badlav’: Yamuna revival to road  infra upgrade",
+    "url": "https://indianexpress.com/article/political-pulse/bjp-triple-engine-delhi-badlav-yamuna-revival-road-infra-upgrade-9980472/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Its own caste survey in hand  Congress in Karnataka to test BJP with demand to lift quota ceiling",
+    "url": "https://indianexpress.com/article/political-pulse/caste-survey-congress-karnataka-bjp-demand-quota-ceiling-9980318/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "How 12 ounces of Indus water from Pakistan for Somnath temple landed Nehru govt in a row",
+    "url": "https://indianexpress.com/article/political-pulse/indus-river-somnath-pahalgam-india-pakistan-jawaharlal-nehru-9980169/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Caste census amidst Bihar polls: NDA boasts of a coming ‘aandhi’  RJD to demand specifics",
+    "url": "https://indianexpress.com/article/political-pulse/caste-census-bihar-polls-nda-rjd-9980044/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Vizhinjam: The several storms  and some politics  on way to a Kerala port",
+    "url": "https://indianexpress.com/article/political-pulse/vizhinjam-kerala-port-narendra-modi-vijayan-tharoor-9979328/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Today in Politics: Convention in Imphal  shutdown in Kuki areas – Manipur groups to mark two years of ethnic conflict",
+    "url": "https://indianexpress.com/article/political-pulse/politics-kuki-areas-shutdown-manipur-marks-two-years-ethnic-conflict-9979866/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "In Punjab  Haryana  Delhi wars  BJP navigates treacherous waters",
+    "url": "https://indianexpress.com/article/political-pulse/in-punjab-haryana-delhi-wars-bjp-navigates-treacherous-waters-9979617/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Clock ticking  ‘needle barely moving’ in Manipur: The import of NDA MLAs’ letter to Centre",
+    "url": "https://indianexpress.com/article/political-pulse/manipur-nda-mlas-letter-centre-9978829/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Before caste census  the first steps: How to count OBCs  general category castes",
+    "url": "https://indianexpress.com/article/political-pulse/caste-census-obcs-general-sc-st-9978748/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Bengal BJP frets as  after wedding bells  temple bells for Dilip Ghosh at Mamata event",
+    "url": "https://indianexpress.com/article/political-pulse/bjp-dilip-ghosh-visit-cm-mamata-temple-inauguration-rift-9978586/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Terror attacks  Parliament sessions  and one common appeal by Opposition across govts: ‘Share more’",
+    "url": "https://indianexpress.com/article/political-pulse/parliament-terror-attacks-opposition-special-sessions-lok-sabha-rajya-sabha-9978405/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "As it gags motormouths on Pahalgam  why Congress misses right notes over hot buttons",
+    "url": "https://indianexpress.com/article/political-pulse/pahalgam-terror-attack-congress-9978278/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Sanjay Jha: ‘Nitish Kumar left INDIA bloc over caste census as Congress put it on backburner’",
+    "url": "https://indianexpress.com/article/political-pulse/sanjay-jha-nitish-kumar-left-india-bloc-over-caste-census-as-congress-put-it-on-backburner-9977759/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Exclusive | Caste census: Pasmanda Muslims may be counted as OBCs",
+    "url": "https://indianexpress.com/article/political-pulse/caste-census-pasmanda-muslims-obcs-9977439/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Anupriya Patel: ‘Caste census has a timeframe… don’t want to repeat UPA’s errors… also  we won’t take 6 decades’",
+    "url": "https://indianexpress.com/article/political-pulse/anupriya-patel-interview-caste-census-9978013/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Today in Politics: Congress charts out next steps for caste census narrative  asks about timeframe",
+    "url": "https://indianexpress.com/article/political-pulse/politics-congress-caste-census-amaravati-foundation-projects-9977979/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "RJD’s Manoj Jha: ‘A reluctant govt’s agreement to a caste census is not the destination. It is the start. Oppn is alert  will watch it closely’",
+    "url": "https://indianexpress.com/article/political-pulse/rjd-manoj-jha-caste-census-bihar-modi-9977341/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "CWG taint fading  but is a comeback too wishful for Suresh Kalmadi  the face of Pune  friend of Pawar to Gandhis?",
+    "url": "https://indianexpress.com/article/political-pulse/suresh-kalmadi-pune-congress-veteran-cwg-case-sharad-pawar-9977262/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Caste census: Stalled Mandal report to still-born SECC  BJP readies its case against Congress",
+    "url": "https://indianexpress.com/article/political-pulse/caste-census-mandal-report-secc-bjp-case-against-congress-9976996/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "New Mumbai Police chief joins Devendra Fadnavis’s expanding inner circle in choice posts",
+    "url": "https://indianexpress.com/article/political-pulse/new-mumbai-police-chief-devendra-fadnavis-maharashtra-9976841/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "CWC meeting today to discuss terror attack and caste census",
+    "url": "https://indianexpress.com/article/political-pulse/congress-caste-census-cwc-meet-9976451/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "‘Half Akhilesh  half Ambedkar’: Why an SP poster has BJP  BSP fuming",
+    "url": "https://indianexpress.com/article/political-pulse/half-akhilesh-half-ambedkar-sp-poster-bjp-bsp-fuming-9976402/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Rise and fall of Bengal CPI(M) veteran: Face in Jyoti Basu  Buddhadeb Cabinets to expulsion",
+    "url": "https://indianexpress.com/article/political-pulse/bengal-cpim-veteran-jyoti-basu-buddhadeb-cabinet-9975188/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  },
+  {
+    "title": "Today in Politics: Caste census is back in focus  with an unexpected BJP move",
+    "url": "https://indianexpress.com/article/political-pulse/centre-announces-caste-census-bjp-congress-9975958/",
+    "image": "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg"
+  }
+];
+
+export default world;

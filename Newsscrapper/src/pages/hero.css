@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.title{
+    font-size: 3rem;
+    margin:6vh;
+    border: 7px dashed rgb(1,17,160);
+    border-radius: 20px;
+    padding:1vh 5vw;
+}
+
+
+.cards{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin:0 auto;
+}
+
+/* .pureprlagao {
+    background: #CAF4FF  ;
+} */
+
+.card{
+    width:400px;
+    height:max-content;
+    margin:1rem;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: rgba(120, 77, 77, 0.968) 0px 3px 8px;
+}
+.shadowbale {
+
+    box-shadow: rgba(120, 77, 77, 0.968) 0px 3px 8px;
+
+}
+
+.image{
+    width:280px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.tour-info{
+    margin:20px 5px;
+}
+
+.tour-price{
+    color:#1faa59;
+    font-size:1.3rem;
+}
+
+.tour-name{
+    font-size:1.5rem;
+}
+
+.read-more{
+    color:#12b0e8;
+    cursor: pointer;
+}
+
+.btn-red{
+    margin-top:18px;
+    padding: 10px 80px;
+    border: 1px solid #b4161b;
+    cursor: pointer;
+    border-radius:10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #b4161b21;
+}
+
+.btn-red:hover{
+    background-color: red;
+    color:white;
+    transition: all 0.2s;
+}
+
+.refresh{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-white{
+    margin-top:18px;
+    padding:10px 80px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-white:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.2s;
+}
+
+
+
+/* Card.css */
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 20px); /* Three cards per row with some margin */
+    box-sizing: border-box;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.tour-info {
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.read-more {
+    color: blue;
+    cursor: pointer;
+}
+
+.open-page-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000307;
+    color: rgb(6, 6, 6);
+    text-shadow: #1faa59;
+    border: none;
+    cursor: pointer;
+}
+
+.iframe-container {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #007bff;
+    z-index: 1000;
+}
+
+.close-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.embedded-iframe {
+    width: 100%;
+    height: 90%;
+    border: none;
+}
+
+
+/* Card.css */
+
+ /*.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 20px); 
+    box-sizing: border-box;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.tour-info {
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.read-more {
+    color: blue;
+    cursor: pointer;
+}
+
+.open-page-button, .notes-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+.notes-section {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.notes-section textarea {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.notes-section button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.notes-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notes-section li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.iframe-container {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #007bff;
+    z-index: 1000;
+}
+
+.close-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.embedded-iframe {
+    width: 100%;
+    height: 90%;
+    border: none;
+}
+
+
+*/
+
+/* App.css */
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 20px); /* Three cards per row with some margin */
+    box-sizing: border-box;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.tour-info {
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.read-more {
+    color: blue;
+    cursor: pointer;
+}
+
+.open-page-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+.notes-button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.notes-section {
+    margin-top: 10px;
+    background-color: #dd9595;
+    padding: 10px;
+    border: 1px solid #ddd;
+    
+}
+
+.notes-section textarea {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.notes-section button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.notes-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notes-section li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.iframe-container {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #007bff;
+    z-index: 1000;
+}
+
+.close-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.embedded-iframe {
+    width: 100%;
+    height: 90%;
+    border: none;
+}
+
