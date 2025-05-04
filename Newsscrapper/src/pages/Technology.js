@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import data from "../dataavail/tech";
-import Notes from "../components/notesmaking";
+// import Notes from "../components/notesmaking";
 import Tours from "../components/Tours";
 import Heading from "../components/Heading";
 import "./hero.css";
 
 const Technology = () => {
-  const [tours, setTours] = useState(data);
+  const [tours] = useState(data);
   return (
     <div className="App">
       {/* <Notes></Notes> */}

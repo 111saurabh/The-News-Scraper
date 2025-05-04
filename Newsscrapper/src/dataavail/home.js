@@ -1,63 +1,203 @@
 const home = [
   {
-    "title": "India Imposes Blanket Ban on Imports from Pakistan",
-    "url": "https://www.asianage.com/nation/india-imposes-blanket-ban-on-imports-from-pakistan-1876621",
-    "image": "https://www.asianage.com/h-upload/2025/05/03/500x300_1914014-attari.webp"
+    "title": "The Real Reason Behind Pak Army Chief Munir’s Anti-India Speech: Exclusive From Imran Aide & Junoon Member",
+    "url": "https://www.news18.com/world/why-pakistan-army-chief-asim-munir-gave-hate-speech-what-next-for-imran-khan-ws-kl-9323250.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/03/asim-munir-2025-03-45a88f0b5ef91c45ea5031e892cdc860-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    "title": "Give Voice to Traditions: Jaishankar",
-    "url": "https://www.asianage.com/nation/give-voice-to-traditions-jaishankar-1876569",
-    "image": "https://www.asianage.com/h-upload/2025/05/02/500x300_1913924-untitleddesign1.webp"
+    "title": "India Cuts Water Flow Through Baglihar Dam After Indus Treaty Suspension: Report",
+    "url": "https://www.news18.com/india/india-cuts-water-flow-through-baglihar-dam-after-indus-treaty-suspension-report-ws-l-9323289.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/indus-waters-treaty-2025-04-f79dc21bd7fb586876f596afb4732025-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    "title": "Global Airlines Avoid Pak Airspace Despite...",
-    "url": "https://www.asianage.com/world/others/global-airlines-avoid-pak-airspace-despite-permission-1876566",
-    "image": "https://www.asianage.com/h-upload/2025/04/25/500x300_1911654-flight.webp"
+    "title": "Murshidabad Riots: Security Boost To Legislative Steps  A Look At Bengal Governor’s Recommendations",
+    "url": "https://www.news18.com/india/murshidabad-riots-security-to-legislative-steps-what-governor-bose-recommended-ws-kl-9323241.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/new-1-2025-05-0d6331ae42dcfcf8be0c412511bf7a9f-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    "title": "BJP Defends Caste Census Amid Internal Fissures",
-    "url": "https://www.asianage.com/nation/bjp-defends-caste-census-amid-internal-fissures-1876544",
-    "image": "https://www.asianage.com/h-upload/2025/05/02/500x300_1913899-aa-4587093.webp"
+    "title": "Three Killed  3 Injured In Collision Between Cars In MP's Chhatarpur",
+    "url": "https://www.news18.com/india/army-vehicle-plunges-into-gorge-in-jks-ramban-3-soldiers-killed-ws-l-9323278.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/accidentrep-2025-04-1fd325373461c8eb8ae5d893dad9f287-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    "title": "India Imposes Blanket Ban on Imports from Pakistan",
-    "url": "https://www.asianage.com/nation/india-imposes-blanket-ban-on-imports-from-pakistan-1876621",
-    "image": "https://www.asianage.com/h-upload/2025/05/03/500x300_1914014-attari.webp"
+    "title": "Pahalgam Terror Attack: PM Modi Meets Air Force Chief After Army  Navy Briefings",
+    "url": "https://www.news18.com/india/pahalgam-attack-pm-modi-holds-talks-air-chief-marshal-meetings-chiefs-of-navy-army-ws-l-9323270.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/modi-airchief-1-2025-05-e18f41fecc83d2634f83a37edf742613-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    "title": "Give Voice to Traditions: Jaishankar",
-    "url": "https://www.asianage.com/nation/give-voice-to-traditions-jaishankar-1876569",
-    "image": "https://www.asianage.com/h-upload/2025/05/02/500x300_1913924-untitleddesign1.webp"
+    "title": "News18 Afternoon Digest: Jaishankar Criticises Europe  Rahul Gandhi Admits To Congress' 'Wrongdoings' & Other Top Stories",
+    "url": "https://www.news18.com/india/news18-afternoon-digest-jaishankar-criticises-europe-rahul-gandhi-admits-to-congress-wrongdoings-other-top-stories-9323262.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/jaishankar-2025-05-0d5b20004e7ce11f857dea50061e0310-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    "title": "Global Airlines Avoid Pak Airspace Despite...",
-    "url": "https://www.asianage.com/world/others/global-airlines-avoid-pak-airspace-despite-permission-1876566",
-    "image": "https://www.asianage.com/h-upload/2025/04/25/500x300_1911654-flight.webp"
+    "title": "Minor Girl Attacks Hapur Shopkeeper With Blade After He Refused To Accept Purchased Items",
+    "url": "https://www.news18.com/india/minor-girl-attacks-hapur-shopkeeper-with-blade-after-he-refused-to-accept-purchased-items-ws-kl-9323235.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/NW181600-x-900-px-9-2025-05-397471450f1e55fa610a9e55cd27fa56-16x9.png?impolicy=website&width=249&height=140"
   },
   {
-    "title": "BJP Defends Caste Census Amid Internal Fissures",
-    "url": "https://www.asianage.com/nation/bjp-defends-caste-census-amid-internal-fissures-1876544",
-    "image": "https://www.asianage.com/h-upload/2025/05/02/500x300_1913899-aa-4587093.webp"
+    "title": "Padma Shri Awardee And Renowned Yoga Guru Baba Sivanand Passes Away At 128",
+    "url": "https://www.news18.com/india/padma-shri-awardee-and-renowned-yoga-guru-baba-sivanand-passes-away-at-128-9323243.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/babashivanand-2025-05-08da178cb1e06c4c60eddffa2a11a633-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    "title": "India Imposes Blanket Ban on Imports from Pakistan",
-    "url": "https://www.asianage.com/nation/india-imposes-blanket-ban-on-imports-from-pakistan-1876621",
-    "image": "https://www.asianage.com/h-upload/2025/05/03/500x300_1914014-attari.webp"
+    "title": "‘India Looking For Partners  Not Preachers’: Jaishankar’s Sharp Dig At Europe",
+    "url": "https://www.news18.com/india/we-look-for-partners-not-preachers-jaishankars-sharp-dig-at-europe-ws-kl-9323242.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/jaishankar-2025-05-0d5b20004e7ce11f857dea50061e0310-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    "title": "Give Voice to Traditions: Jaishankar",
-    "url": "https://www.asianage.com/nation/give-voice-to-traditions-jaishankar-1876569",
-    "image": "https://www.asianage.com/h-upload/2025/05/02/500x300_1913924-untitleddesign1.webp"
+    "title": "Palghar Man Beaten Up By Locals  Arrested Over Objectionable Remarks On Shivaji Maharaj",
+    "url": "https://www.news18.com/india/palghar-man-beaten-up-by-locals-arrested-over-objectionable-remarks-on-shivaji-maharaj-9323234.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/Untitled-design-2025-04-25T180751.736-2025-04-70bede39e601f1f397129d11828a71e8-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    "title": "Global Airlines Avoid Pak Airspace Despite...",
-    "url": "https://www.asianage.com/world/others/global-airlines-avoid-pak-airspace-despite-permission-1876566",
-    "image": "https://www.asianage.com/h-upload/2025/04/25/500x300_1911654-flight.webp"
+    "title": "‘Pahalgam An Execution  Pak Should’ve Condemned It’: Imam Tawhidi Says Islam Doesn’t Allow Terrorism",
+    "url": "https://www.news18.com/india/pahalgam-attack-execution-islam-doesnt-allow-terrorism-imam-mohammad-tawhidi-ws-kl-9323152.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/new-2025-05-7c56324e7da1a5efbaa426f2da918c5c-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    "title": "BJP Defends Caste Census Amid Internal Fissures",
-    "url": "https://www.asianage.com/nation/bjp-defends-caste-census-amid-internal-fissures-1876544",
-    "image": "https://www.asianage.com/h-upload/2025/05/02/500x300_1913899-aa-4587093.webp"
+    "title": "India Blocks X Accounts Of Former Pakistan PM Imran Khan  Bilawal Bhutto",
+    "url": "https://www.news18.com/india/india-blocks-accounts-of-former-pakistan-pm-imran-khan-bilawal-bhutto-pahalgam-attack-ws-l-9323189.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/imran-bilawal-2025-05-8509ae223d1518113b3cae4f3176db07-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Two Held In Amritsar On Spying Charge  Probe Reveals Their Links To Pakistani Intelligence",
+    "url": "https://www.news18.com/india/two-held-in-amritsar-on-spying-charge-probe-reveals-their-links-to-pakistani-intelligence-ws-l-9323178.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/arrest-2025-04-5625a7017855acc4e3ae8782ba8eb66b-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "IRCTC New Rule: Waiting List Passengers Not Allowed To Travel In AC  Sleeper Coaches",
+    "url": "https://www.news18.com/india/irctc-new-rule-waiting-list-passengers-not-allowed-to-travel-in-ac-sleeper-coaches-9323173.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/train-2025-04-9133e0d191b10fdb3265c418e6cb28ba-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "LoP Rahul Gandhi Calls Lord Ram 'Mythological'  BJP Hits Back With 'Anti-Hindu' Jibe | News18",
+    "url": "https://www.news18.com/videos/india/lop-rahul-gandhi-calls-lord-ram-mythological-bjp-hits-back-with-anti-hindu-jibe-news18-9323154.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/1746334823_1f52d741-5c71-40d4-b7d5-737bd9083195-16x9.jpeg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Experts Expose Pakistan's Fake Terror Claims; Analysis Reveals India Wrongfully Blamed | News18",
+    "url": "https://www.news18.com/videos/india/experts-expose-pakistan-s-fake-terror-claims-analysis-reveals-india-wrongfully-blamed-news18-9323149.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/1746334383_d1be7700-6fe1-42ba-ac88-d8ebed8ff67a-16x9.jpeg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Pakistan Continues Ceasefire Violations Along LoC For 10th Day  Indian Army Retaliates",
+    "url": "https://www.news18.com/india/pakistan-continue-ceasefire-violations-along-loc-for-10th-day-indian-army-retaliates-9323131.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/India-Pakistan-Ceasefire-Violations-2025-04-f8616785aa366df6e52a0ffa4742712a-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Woman Dies By Suicide After Jumping From 17th Floor Of Building In Thane",
+    "url": "https://www.news18.com/india/woman-dies-by-suicide-after-jumping-from-17th-floor-of-building-in-thane-9323123.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/03/crime-scene-2025-03-671c1578c33309353e98e74e8f4b6979-16x9.png?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "'Hit Money Paid From Govt Aid': Probe Into Suhas Shetty's Murder Points To Revenge Plot",
+    "url": "https://www.news18.com/india/hit-money-paid-from-govt-aid-probe-into-suhas-shettys-murder-points-to-revenge-plot-9323037.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/FotoJet-2025-05-02T141642.389-2025-05-17091a185ed9221bdd5d4b2bb8aff64f-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Kerala Lottery Results: Akshaya AK-700 Winners For May 4; First Prize Rs 70 Lakh",
+    "url": "https://www.news18.com/india/kerala-lottery-results-today-live-updates-akshaya-ak-700-winners-list-for-4-may-2025-ws-l-9320449.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/kerala-lottery-results-4-may-2025-live-updates-2025-05-d6ae5f4ab5b22d44ef68b48ee9ac6b2d-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Married Pakistani Woman After Getting Nod From CRPF Headquarters: Sacked Jawan",
+    "url": "https://www.news18.com/india/married-pakistani-woman-after-getting-nod-from-crpf-headquarters-sacked-trooper-9323070.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/03/CRPF-Jawan-ak-Bride-2025-03-98d7c649489c36a54d0d06cd1b1b99d4-16x9.png?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Shillong Teer Result Today  May 4: Winning Numbers And Archery Game Details",
+    "url": "https://www.news18.com/india/shillong-sunday-teer-result-today-4-5-2025-first-and-second-round-lottery-result-check-winning-numbers-full-list-ws-e-9320465.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/image-2025-05-515cdd36034df58c0dc7113f3ef9b1fe-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Union Minister Resolves To Not Accept Bouquets  Mementoes Till Pahalgam Attack Is Avenged",
+    "url": "https://www.news18.com/india/union-minister-cr-paatil-resolves-to-not-accept-bouquets-mementoes-till-pahalgam-attack-is-avenged-9323066.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/NW181600-x-900-px-43-2025-04-2c92858c29c1f22d8e950c7b426a63fa-16x9.png?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Man Breaks Into Seema Haider's House In Noida  Claims She Used 'Black Magic' On Him",
+    "url": "https://www.news18.com/india/man-breaks-into-seema-haiders-house-in-noida-claims-she-used-black-magic-on-him-9323036.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/seema-haider-sachin-meena-2025-04-3df7e6933f9cf3f0689ed98bb05574bc-16x9.png?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Stormy Sunday Likely In Delhi  Thunderstorms In Several States | Weather Updates",
+    "url": "https://www.news18.com/india/delhi-ncr-rain-mumbai-chennai-hyderabad-bengaluru-imd-weather-updates-ws-bl-9323009.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/delhi-rains-2025-05-eb86fa23a962d2b8e4ad2ba98cf3e0c9-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Portals Of Badrinath Dham Opened For Devotees | Watch",
+    "url": "https://www.news18.com/india/portals-of-badrinath-dham-opened-for-devotees-watch-9323011.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/NW181600-x-900-px-8-2025-05-abda8a2dc8978e27c4ad140f7037a2cd-16x9.png?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Government Terminates IMF ED K V Subramanian's Services 6 Months Ahead Of Tenure",
+    "url": "https://www.news18.com/india/government-terminates-imf-ed-k-v-subramanians-services-6-months-ahead-of-tenure-9323006.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/NW181600-x-900-px-2025-05-9c7ae364c8a41f2be9b7643104a659cc-16x9.png?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Rahul Gandhi Calls Lord Ram 'Mythological'  BJP Hits Back With 'Anti-Hindu' Jibe",
+    "url": "https://www.news18.com/india/rahul-gandhi-calls-lord-ram-mythological-bjp-hits-back-with-anti-hindu-jibe-9323010.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/poonawallarahul-2025-05-d45d6d57c20a460b3d26cb51839a3911-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Pahalgam Terror Attack LIVE: India Issues Navigation Alert For Parts Of Arabian Sea",
+    "url": "https://www.news18.com/india/pahalgam-terror-attack-live-updates-jammu-and-kashmir-india-pakistan-tensions-latest-news-liveblog-9323005.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/Narendra-Modi-PTI-2025-04-dd2afd71831d411d88122a4e544164c5-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Fake Information Derailing Pahalgam Probe  Over 200 False Alarms Raised: Intel Sources | Exclusive",
+    "url": "https://www.news18.com/india/fake-information-derailing-pahalgam-probe-over-200-false-alarms-raised-intel-sources-exclusive-9322963.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Pahalgam-1-2025-05-c81c016492d137457231fbab8594ef6f-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "UP Advocate Shot By Two Bike-Borne Assailants In Prayagraj",
+    "url": "https://www.news18.com/india/up-advocate-shot-by-two-bike-borne-assailants-in-prayagraj-ws-l-9322957.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Untitled-design-2025-05-03T235018.487-2025-05-4d2c0bd3f78ab3e6f39d03d7dbf3dd4f-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "UP: Two Masked Men Rob Jewellery Store  Kill Owner In Agra",
+    "url": "https://www.news18.com/india/up-two-masked-men-rob-jewellery-store-kill-owner-in-agra-9322954.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Untitled-design-2025-05-03T233821.219-2025-05-fa4e62eee74c9b7e617dfbd656257bfb-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Man's Decomposed Body Found Inside House In South Delhi's Malviya Nagar; Suicide Suspected",
+    "url": "https://www.news18.com/india/mans-decomposed-body-found-inside-house-in-south-delhis-malviya-nagar-suicide-suspected-9322947.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/Image-4-2025-04-25b34f80c7f4213f434691f984eea496-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "NIA Grills Two Jailed “Terrorist Associates” as...",
+    "url": "https://www.asianage.com/nation/nia-grills-two-jailed-terrorist-associates-as-key-leads-link-pahalgam-attack-to-lashkar-e-taiba-1876744",
+    "image": "https://www.asianage.com/h-upload/2025/05/03/500x300_1914177-10.webp"
+  },
+  {
+    "title": "India Views Pakistan's Surface To Surface...",
+    "url": "https://www.asianage.com/nation/india-calls-pak-missile-test-blatant-provocation-1876717",
+    "image": "https://www.asianage.com/h-upload/2025/05/03/500x300_1914160-pakistanmissile.webp"
+  },
+  {
+    "title": "Three  Including Engineer  Killed as Concrete Slab...",
+    "url": "https://www.asianage.com/nation/three-including-engineer-killed-as-concrete-slab-collapses-in-cuttack-1876707",
+    "image": "https://www.asianage.com/h-upload/2025/05/03/500x300_1914136-accidentsite.webp"
+  },
+  {
+    "title": "Shiv Sena Minister Slams Ajit Pawar’s Department...",
+    "url": "https://www.asianage.com/india/politics/shiv-sena-minister-slams-ajit-pawars-department-over-illegal-funds-diversion-1876702",
+    "image": "https://www.asianage.com/h-upload/2025/05/03/500x300_1914128-la-2327576.webp"
+  },
+  {
+    "title": "Sunday book pick: In Jonathan Franzen’s novel ‘Crossroads ’ the maker abandons the faithful",
+    "url": "https://scroll.in/article/1081407/sunday-book-pick-in-jonathan-franzens-novel-crossroads-the-maker-abandons-the-faithful",
+    "image": "https://sc0.blr1.cdn.digitaloceanspaces.com/thumbnail/206817-bynijmoqiv-1744796823.jpg"
+  },
+  {
+    "title": "Why has a genre of music that evokes images of  despair and destruction become a popular sleep aid?",
+    "url": "https://scroll.in/article/1080773/why-has-a-genre-of-music-that-evokes-images-of-despair-and-destruction-become-a-popular-sleep-aid",
+    "image": "https://sc0.blr1.cdn.digitaloceanspaces.com/thumbnail/206502-pixudjbqsf-1743159192.jpg"
+  },
+  {
+    "title": "Video: Why activists unable to blink an eye went to court against E-KYC",
+    "url": "https://scroll.in/video/1081950/video-why-activists-unable-to-blink-an-eye-went-to-court-against-e-kyc",
+    "image": "https://sc0.blr1.cdn.digitaloceanspaces.com/thumbnail/207059-uogurxzfyd-1746333821.jpeg"
   }
 ];
 

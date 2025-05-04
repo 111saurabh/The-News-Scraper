@@ -5,7 +5,7 @@ import Heading from "../components/Heading";
 import "./hero.css";
 
 const Worldnews = () => {
-  const [tours, setTours] = useState(data);
+  const [tours] = useState(data);
   return (
     <div className="App">
       <Heading></Heading>

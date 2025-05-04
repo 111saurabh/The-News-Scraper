@@ -1,182 +1,169 @@
 const business = [
   {
-    title:
-      "IMF dataset controversy: Sources said he had questioned method behind IMF rating; also concerns flagged relating to allegations of ‘impropriety’ linked to his book promotion  say sources.",
-    url: "https://indianexpress.com/article/business/government-recalls-imf-executive-director-krishnamurthy-subramanian-to-india-tenure-left-9980936/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "TCS  Infosys  Other IT Stocks Surge As Cognizant Raises Outlook  Beats Q1 Estimates",
+    "url": "https://www.news18.com/business/markets/tcs-infosys-other-it-stocks-surge-as-cognizant-raises-outlook-beats-q1-estimates-9321081.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/03/stock-market-rally-2025-03-5c9a7ab62c101e2dc6a5f5cca944caf0-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "Indian ban on Pakistani ships: The restrictions were put in place “with immediate effect” and “till further order” to ensure safety of “Indian assets  cargo and connected infrastructure  in public interest and for interest of Indian shipping”  the DGS order stated.",
-    url: "https://indianexpress.com/article/business/india-bans-pakistan-ships-ports-pahalgam-terror-attack-9980448/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Eternal Shares Rise Despite 78% Q4 Profit Drop As Brokerages Remain Bullish; Check Target Price",
+    "url": "https://www.news18.com/business/markets/zomato-share-price-eternal-up-q4-profit-drop-as-brokerages-remain-bullish-9321002.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/02/zomato-2025-02-ce97c7942fa58f40875cf485e4efaf0d-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "On Saturday  the 2025 Australian federal election got underway  with the incumbent center-left government of Prime Minister Anthony Albanese appearing to have been boosted by Trump’s belligerence over the past few weeks.",
-    url: "https://indianexpress.com/article/business/australia-election-trump-canada-pm-anthony-albanese-9979946/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Why Did Share Market Rise Today? Key Factors Behind Rally In Sensex On May 3",
+    "url": "https://www.news18.com/business/markets/sensex-jumps-900-points-nifty-tops-24550-key-reasons-why-market-is-rising-on-may-2-9320929.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/03/why-stock-market-is-rising-today-sensex-jumps-over-900-pts-nifty-above-23150-4-factors-behind-todays-surge-2025-03-b47bea03bc9d85fd8306ce4ee393c8b0-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "India is stepping up its ante against Pakistan following the attack on April 22 that killed 26 tourists in Pahalgam  and is looking at several measures aimed at tightening financial flows.",
-    url: "https://indianexpress.com/article/business/india-to-raise-concerns-against-pak-funding-with-all-mdbs-says-official-9979776/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Ather Energy IPO Allotment Today: How To Check Status Online? Know A Step-By-Step Guide  Latest GMP",
+    "url": "https://www.news18.com/business/ipo/ather-energy-ipo-allotment-today-how-to-check-allotment-status-online-know-a-step-by-step-guide-latest-gmp-9320801.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/01/ipo-1-2025-01-4202c678b26b66f465379dc5bab9c691-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "Speaking at an event hosted by the Isaac Centre for Public Policy  Panagariya said the US-China trade conflict is “here to stay” and that a successful trade deal with the US could pave the way",
-    url: "https://indianexpress.com/article/business/us-import-curbs-will-remain-higher-for-china-vietnam-and-cambodia-arvind-panagariya-9979605/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Closing Bell: Sensex Ends 260 Points Higher  Nifty Tops 24 300; Bajaj Finance Rises 3%",
+    "url": "https://www.news18.com/business/markets/stock-market-updates-sensex-flat-nifty-below-24350-in-pre-open-9320795.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/02/stock-market-prediction-110033097-2025-02-7b5674f672fe3183fce4db213031f6a5-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "The SC order has cast a shadow on other bankruptcy cases as the total admitted claims under the Insolvency and Bankruptcy Code (IBC) stood at Rs 10.46 lakh crore as of March 2024",
-    url: "https://indianexpress.com/article/business/bhushan-steel-top-courts-liquidation-order-may-impact-lenders-insolvency-process-9979656/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Stocks To Watch: Eternal  Marico  Adani Enterprises  HAL  Bandhan Bank  And Others",
+    "url": "https://www.news18.com/business/markets/stocks-to-watch-eternal-marico-adani-enterprises-hal-bandhan-bank-and-others-9320723.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Stock-Market-2025-05-d53090bdc0328cd7117463b749625a53-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "Settlement terms were being discussed  said the source with direct knowledge of the matter  who declined to be named as the matter is confidential.",
+    "title": "No Aptitude Test For Retailers In F&O Trade  Says Sebi Chief",
+    "url": "https://www.news18.com/business/markets/no-aptitude-test-for-retailers-in-fo-trade-says-sebi-chief-9320278.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/03/tuhinnnn-2025-03-98978bbed6d0ca26c3809d7298e00e69-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title: "",
-    url: "https://indianexpress.com/article/business/insider-trading-case-sebi-accuses-adani-nephew-he-seeks-to-settle-9979730/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "TCS Dividend 2025: Tata Consultancy Fixes Record Date For Rs 30 Cash Reward",
+    "url": "https://www.news18.com/business/markets/tcs-dividend-2025-tata-consultancy-fixes-record-date-for-rs-30-cash-reward-ws-kl-9319915.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/tcs-q3-results-today-how-the-stock-may-react-5-things-to-watch-out-for-2025-04-e6f73a315221c16985f79f9f10c050af-16x9.webp?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "DIIs shareholding at 17.62% in NSE listed companies surpasses that of FPIs at 17.22%",
-    url: "https://indianexpress.com/article/business/market/after-15-yrs-domestic-institutions-upstage-fpis-in-ownership-of-listed-stocks-on-nse-9979725/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Greaves Cotton's Revenue Up 19% To Rs 823 Cr In Q4  Declares Dividend",
+    "url": "https://www.news18.com/business/markets/greaves-cottons-revenue-up-19-to-rs-823-cr-in-q4-declares-dividend-ws-kl-9319702.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/02/Bank_Nifty_today_stock_market_news_1684134128117_1684134128337-2025-02-e6823d2f22910ba4d3d0a710e43fe693-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "A potential US–China trade deal could quickly help Chinese exporters regain ground  due to the superior technical expertise China has built over the years. Indian manufacturers say India is currently not in a position to meet US demand in several labour-intensive sectors.",
-    url: "https://indianexpress.com/article/business/us-china-tariff-talks-implications-for-india-9979233/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "IndusInd Derivatives Accounting Lapse: CEO's Exit May Hurt Recovery  Pressure Margins",
+    "url": "https://www.news18.com/business/markets/indusind-derivatives-accounting-lapse-ceos-exit-may-hurt-recovery-pressure-margins-9319548.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/03/IndusInd1-2025-03-f899a9fdca0e82fe710a4db417369d4d-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "The Nifty firms that gained the most included Adani Ports  Maruti Suzuki India  Hindalco and Eternal Ltd.",
-    url: "https://indianexpress.com/article/business/market/india-stock-market-sensex-nifty-updates-9978343/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Petrol  Diesel Fresh Prices Announced: Check Rates In Your City On May 1",
+    "url": "https://www.news18.com/business/markets/petrol-diesel-fresh-prices-announced-check-rates-in-your-city-on-may-1-9319279.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/02/petrol-2025-02-00c53f34c65b09caa858ac616ea7150a-16x9.png?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "India received a relatively much lower tariff rate  and was also among the countries where the US paused retaliatory levies for 90 days.",
-    url: "https://indianexpress.com/article/business/companies/apple-iphones-sold-in-us-india-9978296/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Stock Market Holiday: Are BSE  NSE Closed Today  May 1  For Maharashtra Day?",
+    "url": "https://www.news18.com/business/markets/stock-market-holiday-are-bse-nse-closed-today-on-1-may-for-maharashtra-day-9319259.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/02/Sensex-1-1600x900-2025-02-b43ea82e5e25dc27998ab41c27a9ab9d-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "India Defence Stocks: The index has risen by around 2 000 points  or nearly 39 per cent  to 7128.8 as on April 30  2025. The 18 constituents of the index have also seen an impressive rally.",
-    url: "https://indianexpress.com/article/business/market/india-stock-market-sensex-nifty-defence-stocks-9978152/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "IOC Reports 50% Net Profit Jump To Rs 7 265 Cr In Q4  Rs 3 Dividend Announced",
+    "url": "https://www.news18.com/business/markets/ioc-shares-are-in-focus-after-profit-jumps-50-in-q4-dividend-announced-ws-l-9319255.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/02/school-5-2025-02-de218793b9bb02293271d95004e5d2b2-16x9.png?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "PM Modi in Thiruvananthapuram: Unlike most Indian ports  Vizhinjam experiences minimal sand movement along the coast (littoral drift)  which reduces maintenance costs.",
-    url: "https://indianexpress.com/article/business/pm-modi-vizhinjam-port-india-first-transshipment-hub-9978092/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Pakistan Stock Exchange Crashes By Over 3 500 Points Amid Fears Of Indian Retaliation",
+    "url": "https://www.news18.com/business/markets/pakistan-stock-exchange-crashes-by-over-3500-points-amid-fears-of-indian-retaliation-9318872.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/Pakistan-Karachi-Stock-Market-Trading-REUTERS-2025-04-e21f70b92a7f82d34aac2006ab535c53-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "Adding that India should have new investment avenues for this industry  Ambani said  “And India should create an enabling  encouraging and empowering regulatory environment that rewards imagination and inclusion.”",
-    url: "https://indianexpress.com/article/business/indias-media-and-entertainment-industry-can-grow-over-100-billion-in-next-decade-mukesh-ambani-9977769/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Varun Beverages Share Price: PepsiCo's Bottle-Maker Profit Jumps 34% In Q1  Dividend Announced",
+    "url": "https://www.news18.com/business/markets/varun-beverage-share-price-pepsicos-bottle-maker-profit-jumps-34-in-q1-dividend-announced-ws-kl-9318634.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/varun_1683817343980_1715681473027-2025-04-cc8f4e1b76936e09133025d652b20867-16x9.webp?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "ATMs have gained prominence as a delivery channel for banking transactions in India.",
-    url: "https://indianexpress.com/article/business/atm-transaction-charges-customers-pay-9976762/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Stock Market Holiday Tomorrow: Why NSE  BSE Will Be Closed On Thursday  May 01?",
+    "url": "https://www.news18.com/business/markets/stock-market-holiday-tomorrow-why-nse-bse-will-be-closed-on-thursday-may-01-ws-dl-9318366.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/market-holiday-2025-04-e307238f452f5a465825a5bd60ef67bc-16x9.png?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "Backed by an outlay of nearly Rs 20 000 crore  the National Green Hydrogen Mission also supports domestic electrolyser manufacturing  green hydrogen production  and sector-specific pilot projects.",
-    url: "https://indianexpress.com/article/business/green-hydrogen-official-stamp-india-certification-scheme-9976732/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "SDHI Shares Up 5% After Company Unveils Integrated Logistics Hub In Gujarat",
+    "url": "https://www.news18.com/business/markets/swan-defence-shares-up-5-after-company-unveils-integrated-logistics-hub-in-gujarat-ws-l-9318139.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/swan-2025-04-2ecd45fe1fefc99a099c00336627363e-16x9.png?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "India Share Market Holiday 2025: The Indian share market will be closed today  May 1  2025  for Maharashtra Day. Trading resumes tomorrow.",
-    url: "https://indianexpress.com/article/business/market/maharashtra-day-share-market-holiday-2025-bse-nse-open-closed-may-1-9976081/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Bajaj Finance  Bajaj Finserv Shares Tank 6% Following Q4 Earnings; Should You Buy?",
+    "url": "https://www.news18.com/business/markets/bajaj-finance-bajaj-finserv-shares-tank-6-following-q4-earnings-should-you-buy-9318328.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/03/Bajaj-2025-03-270166bee97a03f5950e15df7d1d370c-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "Opinion Trading Platform: As per industry estimates  these platforms have registered transaction volumes of over Rs 50 000 crore a year with a user base of more than 5 crore people.",
-    url: "https://indianexpress.com/article/business/opinion-trading-platforms-sebi-warned-investors-9975981/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "IndusInd Bank Shares Fall 3% After CEO Quits  New Committee Formed To Discharge Duties",
+    "url": "https://www.news18.com/business/markets/indusind-bank-shares-fall-3-after-ceo-quits-new-committee-formed-to-discharge-duties-9318251.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/03/indusind-bank-shares-falling-2025-03-ce3da0bf1269912c4ec3d72a3149d778-16x9.png?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "On April 24  Pakistan had closed its airspace for Indian aircraft and airlines after New Delhi’s strong diplomatic moves in response to the terror attack.",
-    url: "https://indianexpress.com/article/business/aviation/pahalgam-attack-aftermath-india-shuts-airspace-for-pakistani-flights-in-tit-for-tat-move-9975582/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Sensex Falls 46.14 Points  Nifty Dips Marginally To Close Below 24 350",
+    "url": "https://www.news18.com/business/markets/stock-market-updates-sensex-opens-200-points-lower-nifty-at-24280-bajaj-fin-indusind-drag-9318199.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/equity-market-2025-04-7b762be763815b4d39b66eee1b6e7f54-16x9.png?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "Indian Oil Chairman Arvinder Singh Sahney said that all purchase decisions would be purely on commercial basis  and there was no “mandate” for the company to buy more oil from any country",
-    url: "https://indianexpress.com/article/business/india-russia-oil-us-crude-purchases-indian-oil-chairman-arvinder-sahney-9975224/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Stocks To Watch: IndusInd Bank  Bajaj Finance  SBI  Vedanta  Infosys  BPCL  And Others",
+    "url": "https://www.news18.com/business/markets/stocks-to-watch-indusind-bank-bajaj-finance-sbi-vedanta-infosys-bpcl-and-others-9318114.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/stocks-to-watch-2025-04-7e46707eed76f133d21319e67fe8ccfa-16x9.png?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "The selective relief for the North American region assumes significance  as the US is the largest and fastest-growing auto component market for Indian exporters.",
-    url: "https://indianexpress.com/article/business/trump-auto-tariff-relief-canada-mexico-india-component-exporters-9975223/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Dividend  Stock Split And Bonus: Bajaj Finance's Triple Bonanza In Q4  Check Record Dates",
+    "url": "https://www.news18.com/business/markets/dividend-stock-split-and-bonus-bajaj-finances-triple-bonanza-in-q4-check-record-date-ws-kl-9318096.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/03/bajaj-finance-1-2025-03-e8df49de1d61c71c6036fd53ee60dcf8-16x9.png?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "In his March 7 Budget speech  Omar said his government’s goal was to increase sector’s contribution to J&K’s GSDP from 7% to at least 15% over the next 4-5 years",
-    url: "https://indianexpress.com/article/business/pahalgam-jk-ambitious-tourism-revenue-jobs-9974646/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "SBI May Bring FPO To Raise Fund For FY26  Proposal To Be Considered On May 3",
+    "url": "https://www.news18.com/business/markets/sbi-may-bring-fpo-to-raise-fund-for-fy26-proposal-to-be-considered-on-may-3-ws-kl-9317636.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/02/sbi-2025-02-6829209b771be8df7aaa74a23cc0226a-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "Since the last date for filing TDS returns for the January-March quarter is May 31  the updated information is available only in the first week of June",
-    url: "https://indianexpress.com/article/business/itr-notified-by-income-tax-department-9974278/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Ambuja Cements Reports Record Profit To Rs 5 158 Cr In Q4  Dividend Declared",
+    "url": "https://www.news18.com/business/markets/ambuja-cements-reports-record-profit-to-rs-5158-cr-in-q4-dividend-declared-ws-dkl-9317477.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/03/ambuja-cement-2025-03-dd03cc086ad3aa6d22485decb7dfb801-16x9.png?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "Shares at the PSX fell over 2 000 points in intraday trade amid uncertainty over speculation that India might launch military strikes against Pakistan.",
-    url: "https://indianexpress.com/article/business/pakistan-stock-market-dips-sharply-escalating-tensions-india-pahalgam-9974163/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "Investor In Hyderabad Defrauded Of Rs 2.8 Crore Through Fake IPO Offer",
+    "url": "https://www.news18.com/business/markets/investor-in-hyderabad-defrauded-of-rs-2-8-crore-through-fake-ipo-offer-9317233.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/IPO-scam-2025-04-f32ca3fc4a577b1cf3422c1194a283bb-16x9.jpg?impolicy=website&width=249&height=140"
   },
   {
-    title:
-      "US President Donald Trump claimed over the weekend that he had spoken directly with Chinese President Xi Jinping on the trade issue.",
-    url: "https://indianexpress.com/article/business/us-china-standoff-tariffs-trade-war-9974039/",
-    image:
-      "https://indianexpress.com/wp-content/themes/indianexpress/images/default-ie.jpg",
+    "title": "This Smallcap Defence Stock To Announce Stock Split And Dividend Tomorrow  Up 16% In 2 Days",
+    "url": "https://www.news18.com/business/markets/this-smallcap-defence-stock-to-announce-stock-split-and-dividend-tomorrow-up-16-in-2-days-ws-kl-9317079.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/defence-2025-04-ba1e6354f8377ddf1b3b2e0445fd7f7f-16x9.png?impolicy=website&width=249&height=140"
   },
+  {
+    "title": "Go Digit Shares Fall 2% Despite 118% Net Profit Jump In Q4",
+    "url": "https://www.news18.com/business/markets/go-digit-shares-fall-2-despite-118-net-profit-jump-in-q4-ws-dl-9317036.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/03/stock-market-down-2025-03-ade4f5f8c6663930c6d01902c0f2ec90-16x9.png?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Gensol Engineering Shares Hit 5% Lower Circuit Amid ED Raids In FEMA Probe",
+    "url": "https://www.news18.com/business/markets/gensol-engineering-shares-hit-5-lower-circuit-amid-ed-raids-in-fema-probe-9316996.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/gensol-2025-04-1e8770f80cabc4cff8134e437bb2a583-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Tata Tech Shares Fall 6% As TPG Plans To Offload 3.95% Stake Via Bulk Deal",
+    "url": "https://www.news18.com/business/markets/tata-tech-shares-fall-6-as-tpg-plans-to-offload-3-95-stake-via-bulk-deal-9316959.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/02/tata-group-ranked-20th-in-boston-consulting-groups-most-innovative-companies-list-2025-02-379f9b27a58c599a86fbd06b7de11e5d-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Stock Market Updates: Sensex Ends 70 Points Higher  Nifty Above 24 300; RIL  TechM Rise 3% Each",
+    "url": "https://www.news18.com/business/markets/stock-market-update-sensex-opens-170-points-higher-nifty-at-24390-indusind-bank-tamo-rise-9316902.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/02/stock-market-prediction-110033097-2025-02-7b5674f672fe3183fce4db213031f6a5-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Ather Energy IPO Subscribed 23% So Far On Day 2: Check GMP  Reviews Before Investing",
+    "url": "https://www.news18.com/business/markets/ather-energy-ipo-day-2-check-subscription-status-latest-gmp-before-investing-ws-dkl-9316861.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/01/ipo-1-2025-01-4202c678b26b66f465379dc5bab9c691-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Stocks To Watch: Bajaj Finance  TVS Motor  Tata Motors  Trent  Ambuja  NTPC Green  And Others",
+    "url": "https://www.news18.com/business/markets/stocks-to-watch-bajaj-finance-tvs-motor-tata-motors-trent-ambuja-ntpc-green-and-others-9316829.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/02/Sensex-1600x900-2025-02-28b882cec03a790322b3d9fe3b644b76-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "SEBI Cracks India’s First Major Spoofing Case Involving 173 Stocks And A Broker",
+    "url": "https://www.news18.com/business/markets/sebi-cracks-indias-first-major-spoofing-case-involving-173-stocks-and-a-broker-9316818.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/02/Untitled-design-2025-02-24T131922.080-2025-02-4832a32dd3d1aa6e7f6efbff82a4d465-16x9.png?impolicy=website&width=249&height=140"
+  }
 ];
 
 export default business;

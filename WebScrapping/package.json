@@ -7,7 +7,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "scrape": "node Newsmaniastarting.js",
+    "convert": "node concsvtojson.js",
+    "frontend": "node convertAllJsonToJs.js",
+    "all": "npm run scrape && npm run convert && npm run frontend"
   },
   "keywords": [],
   "author": "",
