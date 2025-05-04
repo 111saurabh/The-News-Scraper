@@ -2,6 +2,7 @@ import fs from "fs";
 import { Cluster } from "puppeteer-cluster";
 const urls = [
   "https://www.news18.com/india/",
+  "https://www.hindustantimes.com/",
   "https://www.news18.com/world/",
   "https://www.asianage.com",
   "https://www.news18.com/tech/",

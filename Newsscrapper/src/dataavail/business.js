@@ -1,5 +1,10 @@
 const business = [
   {
+    "title": "RailTel Shares Jump 14% As Q4 Net Profit Rises 46% YoY; Key Points For Investors",
+    "url": "https://www.news18.com/business/markets/railtel-shares-jump-14-as-q4-net-profit-rises-46-yoy-key-points-for-investors-9321223.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/rrb-railway-2025-04-53bf9f0ac0123eccfd4136e200f85de4-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
     "title": "TCS  Infosys  Other IT Stocks Surge As Cognizant Raises Outlook  Beats Q1 Estimates",
     "url": "https://www.news18.com/business/markets/tcs-infosys-other-it-stocks-surge-as-cognizant-raises-outlook-beats-q1-estimates-9321081.html",
     "image": "https://images.news18.com/ibnlive/uploads/2025/03/stock-market-rally-2025-03-5c9a7ab62c101e2dc6a5f5cca944caf0-16x9.jpg?impolicy=website&width=249&height=140"
@@ -37,7 +42,7 @@ const business = [
   {
     "title": "TCS Dividend 2025: Tata Consultancy Fixes Record Date For Rs 30 Cash Reward",
     "url": "https://www.news18.com/business/markets/tcs-dividend-2025-tata-consultancy-fixes-record-date-for-rs-30-cash-reward-ws-kl-9319915.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/04/tcs-q3-results-today-how-the-stock-may-react-5-things-to-watch-out-for-2025-04-e6f73a315221c16985f79f9f10c050af-16x9.webp?impolicy=website&width=249&height=140"
+    "image": "https://images.news18.com/static_news18/pix/ibnhome/news18/images/default-100x75.jpg"
   },
   {
     "title": "Greaves Cotton's Revenue Up 19% To Rs 823 Cr In Q4  Declares Dividend",
@@ -72,7 +77,7 @@ const business = [
   {
     "title": "Varun Beverages Share Price: PepsiCo's Bottle-Maker Profit Jumps 34% In Q1  Dividend Announced",
     "url": "https://www.news18.com/business/markets/varun-beverage-share-price-pepsicos-bottle-maker-profit-jumps-34-in-q1-dividend-announced-ws-kl-9318634.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/04/varun_1683817343980_1715681473027-2025-04-cc8f4e1b76936e09133025d652b20867-16x9.webp?impolicy=website&width=249&height=140"
+    "image": "https://images.news18.com/static_news18/pix/ibnhome/news18/images/default-100x75.jpg"
   },
   {
     "title": "Stock Market Holiday Tomorrow: Why NSE  BSE Will Be Closed On Thursday  May 01?",
@@ -158,11 +163,6 @@ const business = [
     "title": "Stocks To Watch: Bajaj Finance  TVS Motor  Tata Motors  Trent  Ambuja  NTPC Green  And Others",
     "url": "https://www.news18.com/business/markets/stocks-to-watch-bajaj-finance-tvs-motor-tata-motors-trent-ambuja-ntpc-green-and-others-9316829.html",
     "image": "https://images.news18.com/ibnlive/uploads/2025/02/Sensex-1600x900-2025-02-28b882cec03a790322b3d9fe3b644b76-16x9.jpg?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "SEBI Cracks India’s First Major Spoofing Case Involving 173 Stocks And A Broker",
-    "url": "https://www.news18.com/business/markets/sebi-cracks-indias-first-major-spoofing-case-involving-173-stocks-and-a-broker-9316818.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/02/Untitled-design-2025-02-24T131922.080-2025-02-4832a32dd3d1aa6e7f6efbff82a4d465-16x9.png?impolicy=website&width=249&height=140"
   }
 ];
 

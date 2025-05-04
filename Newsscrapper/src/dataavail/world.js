@@ -1,5 +1,65 @@
 const world = [
   {
+    "title": "Pakistan’s Baloch Separatists Shut Down Quetta-Karachi Highway  Kidnap Policemen",
+    "url": "https://www.news18.com/world/pakistans-baloch-separatists-shut-down-quetta-karachi-highway-kidnap-policemen-ws-kl-9323637.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Balochistan-Liberation-Army-Attack-AFP-2025-05-3b12cfff6bccf3bf40d0bbc00ab9a395-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Japan Scrambles Jets as China “Violates Airspace”  Beijing's South China Sea \"Expansion\" Revealed",
+    "url": "https://www.news18.com/videos/world/japan-scrambles-jets-as-china-violates-airspace-beijing-s-south-china-sea-expansion-revealed-9323659.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/1746377102_cf90953b-d1a7-499e-9ae3-7f9267b2306f-16x9.jpeg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "'I Get Close To It  Then Positive Things Happen': Trump Answers If He'll Quit Ukraine Talks",
+    "url": "https://www.news18.com/world/trump-says-he-holds-back-from-quitting-ukraine-truce-talks-when-positive-things-happen-ws-l-9323608.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/trump-2025-05-562f0b4002f011f5a2e54aaf93b16c7e-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "‘There’ll Be Many Bangs’: Israel’s Netanyahu Vows Multi-Phase Retaliation To Houthi Strike On Airport",
+    "url": "https://www.news18.com/world/therell-be-many-bangs-israels-netanyahu-vows-multi-phase-retaliation-to-houthi-strike-on-airport-ws-kl-9323593.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Benjamin-Netanyahu-Israel-Deep-State-AFP-2025-05-ccdd9af1b5fe8098f8a80f558a9ac98e-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Yemen's Houthi Missile Strike Near Israel’s Main Airport Leaves 25-Metre Crater | Video",
+    "url": "https://www.news18.com/world/houthi-missile-hits-ben-gurion-airport-creates-crater-injures-8-ws-l-9323577.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/crater-2025-05-289b6c38a4596c2e5452de1131c0d14e-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Resolve Kashmir Issue  Else More Incidents May Follow Pahalgam: Pakistani Envoy To UK",
+    "url": "https://www.news18.com/world/unresolved-kashmir-issue-could-lead-to-further-fallout-warns-senior-pakistani-envoy-9323562.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Untitled-design-2025-05-04T202233.652-2025-05-42e48d8d9699e8a23f160aa0589e1ca6-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Brazil Police Foil Bomb Attack Targeting Lady Gaga's Concert In Rio De Janeiro’s Copacabana",
+    "url": "https://www.news18.com/world/brazil-police-foil-bomb-attack-targeting-lady-gagas-concert-in-rio-de-janeiros-copacabana-ws-l-9323576.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Untitled-design-2025-05-04T203820.269-2025-05-5a08daba4a5007a167ce68b2825d067e-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "News18 Evening Digest: NIA Grills Pahalgam Local Over Suspicious Absence On Terror Attack Day & Other Top Stories",
+    "url": "https://www.news18.com/india/news18-evening-digest-nia-grills-pahalgam-local-over-suspicious-absence-on-terror-attack-day-other-top-stories-ws-l-9323542.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/pahalgam-2025-05-cbffebee94f3b506898652336ca7d4c8-16x9.png?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "‘I Hope They Won’t Be Needed’: Putin On Using Nuclear Weapons In Ukraine",
+    "url": "https://www.news18.com/world/i-hope-they-wont-be-needed-putin-on-using-nuclear-weapons-in-ukraine-ws-kl-9323415.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Vladimir-Putin-Future-Tech-Ukraine-War-Anniversary-Third-Year-REUTERS-2025-05-02403d631f59a0209859f472441a51d2-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "US: One Dead  13 Hurt As Uninvited Guest Opens Fire After Being Asked To Leave Party",
+    "url": "https://www.news18.com/world/us-one-dead-13-hurt-as-uninvited-guest-opens-fire-after-being-asked-to-leave-party-ws-l-9323377.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Untitled-design-2025-05-04T180655.022-2025-05-bf7568aa4035d6f540a78e83c0d0ec0a-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Air India Suspends Flights To Tel Aviv Till May After Missile Strike Near Airport",
+    "url": "https://www.news18.com/india/air-india-flight-to-tel-aviv-diverted-to-abu-dhabi-after-missile-attack-near-israeli-airport-ws-l-9323366.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/05/New-Project-2025-05-01T090018.653-2025-05-a9a558ae639bf71dddad55e1669b76f4-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
+    "title": "Israeli Cabinet Ministers To Vote On Whether To Intensify Gaza Fighting",
+    "url": "https://www.news18.com/world/israeli-cabinet-ministers-to-vote-on-whether-to-intensify-gaza-fighting-9323331.html",
+    "image": "https://images.news18.com/ibnlive/uploads/2025/04/gaza-2025-04-76d188887705670acb99136b9bd15e32-16x9.jpg?impolicy=website&width=249&height=140"
+  },
+  {
     "title": "The Real Reason Behind Pak Army Chief Munir’s Anti-India Speech: Exclusive From Imran Aide & Junoon Member",
     "url": "https://www.news18.com/world/why-pakistan-army-chief-asim-munir-gave-hate-speech-what-next-for-imran-khan-ws-kl-9323250.html",
     "image": "https://images.news18.com/ibnlive/uploads/2025/03/asim-munir-2025-03-45a88f0b5ef91c45ea5031e892cdc860-16x9.jpg?impolicy=website&width=249&height=140"
@@ -103,66 +163,6 @@ const world = [
     "title": "“Nuclear Flashpoint...\" India Warned  Pak Army Clears Terror Launch Pads  Tests 450-km Range Missile",
     "url": "https://www.news18.com/videos/world/nuclear-flashpoint-india-warned-pak-army-clears-terror-launch-pads-tests-450-km-range-missile-9322899.html",
     "image": "https://images.news18.com/ibnlive/uploads/2025/05/1746290044_40cd9e75-213f-4fcd-a5ce-31f66cb76e2c-16x9.jpeg?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "Israeli Jets Bomb “Military Targets” in Syria in \"Heaviest\" Strike in 2025  4 Druze Fighters Killed",
-    "url": "https://www.news18.com/videos/world/israeli-jets-bomb-military-targets-in-syria-in-heaviest-strike-in-2025-4-druze-fighters-killed-9322853.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/05/1746284283_42600f90-a7f0-4079-9039-d41836dfd6ac-16x9.jpeg?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "‘India Gave No Proof’: Under Pressure  Shehbaz Sharif Parrots Pakistani Officials On Pahalgam",
-    "url": "https://www.news18.com/world/pakistani-pm-shehbaz-sharif-says-india-failed-to-provide-evidence-on-pahalgam-urges-neutral-probe-9322809.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/04/Shehbaz-Sharif-Pakistan-REUTERS-2025-04-ef0ee51d07dd2513d28e6cc98ce37088-16x9.jpg?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "Anthony Albanese Makes History—becomes First Aussie PM In 21 Years To Win A Second Straight Term!",
-    "url": "https://www.news18.com/videos/world/anthony-albanese-makes-history-becomes-first-aussie-pm-in-21-years-to-win-a-second-straight-term-9322799.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/05/1746279062_f6a87dbf-2de3-4d80-b360-22b3d755e741-16x9.jpeg?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "Kash Patel  Trump's Blue-Eyed Boy  'Visible At Nightclubs Far More Than In FBI Headquarters'",
-    "url": "https://www.news18.com/world/kash-patel-trumps-blue-eyed-boy-visible-at-nightclubs-far-more-than-in-fbi-headquarters-9322681.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Kash-Patel-2025-05-1f43925fe97b91270d993133a0ccff64-16x9.jpg?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "Pakistan’s Persistent Provocations After Urging World To Ask India To Defuse Tensions",
-    "url": "https://www.news18.com/world/pakistans-persistent-provocations-after-urging-world-to-ask-india-to-defuse-tensions-9322593.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/05/missilefiring-2025-05-6cb5807d64bd425c641f623db46efe75-16x9.jpg?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "Australian PM Anthony Albanese Wins Second Term; PM Modi Congratulates",
-    "url": "https://www.news18.com/world/australia-election-results-pm-anthony-albanese-wins-re-election-in-federal-poll-2025-labour-party-9322607.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Australia-federal-election-results-2025-05-082ca11ff649c6a1398447be810239d5-16x9.jpg?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "Pakistan Defence Minister Threatens India Over Indus Treaty: 'Will Destroy Structure Built To...'",
-    "url": "https://www.news18.com/world/pakistan-defence-minister-khawaja-asif-threatens-india-over-indus-treaty-will-destroy-structure-built-to-divert-water-9322564.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Pakistan-Defence-Minister-Khawaja-Asif-2025-05-cef6430accee0075568dcb7685267092-16x9.jpg?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "Sri Lankan Flight From Chennai Searched In Colombo Over Intel On 'Wanted' Pahalgam Terror Suspects",
-    "url": "https://www.news18.com/world/colombo-airport-search-operation-chennai-flight-indian-intel-pahalgam-jk-terrorists-9322580.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/05/Untitled-design-2025-05-03T160515.967-2025-05-38df87245ef802ab287ebf956e375dbf-16x9.jpg?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "Polls Close In Australia’s General Election  Vote Counting Begins Amid Economic Pressures",
-    "url": "https://www.news18.com/world/polls-close-in-australias-general-election-vote-counting-begins-amid-economic-pressures-9322487.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/05/australiapolls-2025-05-d41f7e90a77c432ac328786f2f36866e-16x9.jpg?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "Dinner Parties  Listening  Lobbying: What Goes On Behind Closed Doors To Elect New Pope",
-    "url": "https://www.news18.com/world/dinner-parties-listening-lobbying-what-goes-on-behind-closed-doors-to-elect-new-pope-9322482.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/04/pope-vatican-2025-04-e99f3c31ebea5d9eee9e43d6a6243383-16x9.png?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "Russia Downs 170 Drones  8 West-Supplied Missiles Over Crimea  Other Regions",
-    "url": "https://www.news18.com/world/russia-downs-170-drones-8-west-supplied-missiles-over-crimea-other-regions-9322469.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/05/NW181600-x-900-px-33-2025-05-c792519c906370a5964343d7dac698fd-16x9.png?impolicy=website&width=249&height=140"
-  },
-  {
-    "title": "Why Pakistan’s Abdali-II Missile Test Signals Desperation  Not Deterrence | Exclusive",
-    "url": "https://www.news18.com/world/why-pakistans-abdali-ii-missile-test-signals-desperation-not-deterrence-exclusive-ws-l-9322431.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2025/05/missilefiring-2025-05-6cb5807d64bd425c641f623db46efe75-16x9.jpg?impolicy=website&width=249&height=140"
   }
 ];
 
